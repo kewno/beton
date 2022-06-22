@@ -1,0 +1,16 @@
+.completed_works_elem {
+  width: 303px;
+  height: 397px;
+  background: var(--blue);
+  .completed_works_elem__img {
+    height: 225px;
+  }
+
+  .completed_works_elem__text {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--white);
+    margin-left: 20px;
+  }
+}

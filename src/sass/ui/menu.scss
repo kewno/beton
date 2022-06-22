@@ -1,0 +1,22 @@
+.wrap-menu {
+  width: 100%;
+  background: var(--blue);
+
+  nav.menu {
+    max-width: 1242px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0 10px;
+
+    a.menu__elem {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 19px;
+      color: var(--white);
+      text-decoration: none;
+      padding: 19px 0;
+    }
+
+  }
+}

@@ -1,0 +1,20 @@
+mixin concreteView(img, name)
+  .wrap-concrete-view
+    .concrete-view
+      .concrete-view__wrap-text-arrow
+        .wrap-text
+          h2.wrap-text__concrete Бетон
+          p.wrap-text__type= name
+        img(src = '../../images/arrow-right.png', class="arrow")
+      img(src = img, class="concrete-view__img")
+
+
+
+
+      //.wrap-concrete-view
+      //  .concrete-view
+      //    .wrap-text
+      //      h2.wrap-text__concrete Бетон
+      //      p.wrap-text__type= name
+      //    img(src = '../../images/arrow-right.png', class="concrete-view__arrow")
+      //    img(src = img, class="concrete-view__img")

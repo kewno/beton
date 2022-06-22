@@ -1,0 +1,14 @@
+mixin btn(text, href)
+  if href === null
+    button.btn= text
+  else
+    a(class='btn', href= href)= text
+
+    //mixin btn(text, href, img)
+    //  if href === null
+    //    button.btn= text
+    //  else
+    //    if img === null
+    //      a(class='btn', href= href)= text
+    //    else
+    //      a(class='btn', href= href)= text

@@ -1,0 +1,22 @@
+@import '../ui/button';
+@import '../ui/completedWorksElem';
+@import '../ui/phone';
+@import '../ui/concreteView';
+@import '../ui/social';
+@import '../ui/menu';
+@import '../ui/menu-mob';
+@import '../ui/email';
+@import '../ui/inputElem';
+
+
+.wrap-button {
+  max-width: 600px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.wrapPhone {
+  max-width: 210px;
+  //display: flex;
+  //justify-content: center;
+}

@@ -1,0 +1,15 @@
+.email {
+  display: flex;
+
+  .email__img {
+    margin-right: 10px;
+    height: 20.55px;
+    width: 30px;
+  }
+
+  p.email__text {
+    font-weight: 400;
+    font-size: 18px;
+    margin: 0;
+  }
+}
