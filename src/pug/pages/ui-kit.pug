@@ -8,6 +8,7 @@ include ../ui/menu
 include ../ui/menu-mobile
 include ../ui/email
 include ../ui/input
+include ../ui/newsElem
 - let elemMenu = ['Компания', 'Видеоблог', 'Выполненные проекты', 'Бетон', 'Аренда бетононасоса', 'Лаборатория', 'Отзывы', 'Контакты']
 - let phones = [{name: 'Завод в Перми', phone: '+7 (342) 203-06-88'}, {name: 'Завод в Краснокамске', phone: '+7 (342) 271-04-08'}, {name: 'Завод у Чусовского моста', phone: '+7 (342) 203-07-88'}]
 - let checked = true
@@ -17,10 +18,11 @@ include ../ui/input
 .wrap-button
   +btn('Кнопка', null)
   +btn('Ссылка', '/')
-  +btn('Ссылка', '/', )
 
 +inputElem('text', 'Например, Иван Иванов', 'name')
-//
+
++social
+
 +email('../../images/email.png', 'vegabeton@mail.ru')
 +menu(elemMenu)
 +menuMobile(elemMenu, phones, checked, setChecked)
@@ -31,4 +33,6 @@ include ../ui/input
 
 +concreteView('../../images/concrete-view.png', 'на гравии')
 
-+social
++newsElem('02.11.2020', 'Александр Капитонов, директор ООО «Сеть \n' +
+'бетонных заводов ВЕГА», рассказал об опыте работы \n' +
+'с AKKERMANN cement', '../../images/news-1.png')
