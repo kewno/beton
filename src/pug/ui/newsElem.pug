@@ -1,5 +1,5 @@
-mixin newsElem(date, text, src)
-  .news-elem
+mixin newsElem(date, text, src, className)
+  div(class= className)
     .wrap-text
       p.wrap-text__date= date
       p.wrap-text__text= text

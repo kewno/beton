@@ -1,3 +1,11 @@
+include ../components/header
+include ../components/concreteTypes
+include ../components/video
+include ../components/news
+include ../components/delivery
+include ../components/footer
+
+
 doctype html
 html(lang="en")
 
@@ -7,7 +15,21 @@ head
   title Document
 
 body
-  include ui-kit.pug
+- let elemMenu = ['Компания', 'Видеоблог', 'Выполненные проекты', 'Бетон', 'Аренда бетононасоса', 'Лаборатория', 'Отзывы', 'Контакты']
+
+  +header(elemMenu)
+
+  main
+    +concreteTypes()
+
+    +video()
+
+    +news()
+
+    +delivery()
+
+    +footer()
+  //include ui-kit.pug
 
 
   //include ../components/header.pug

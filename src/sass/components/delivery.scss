@@ -1,0 +1,42 @@
+.wrap-delivery {
+  width: 100%;
+  border-bottom: 5px solid var(--blue);
+}
+
+.delivery {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding-top: 90px;
+
+  .delivery__header {
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 120%;
+    color: var(--black);
+    margin: 0;
+    margin-bottom: 25px;
+  }
+
+  .delivery__point {
+    cursor: pointer;
+  }
+
+  .delivery__arrow {
+    position: absolute;
+    top: 32.6px;
+    left: 55px;
+    cursor: pointer;
+  }
+
+  .delivery__card {
+    width: 1920px;
+    margin-left: -875px;
+    height: 618.03px;
+  }
+}
+
+.wrap-point {
+  width: 145px;
+  position: relative;
+  margin: 0 auto -5px;
+}

@@ -1,13 +1,33 @@
 .btn {
-  font-size: 16px;
-  background: #0754A6;
-  color: #FFFFFF;
+  //font-size: 16px;
+  //background: #0754A6;
+  //color: #FFFFFF;
   outline: none;
   border: none;
-  padding: 12px 0 12px 25px;
+  //padding: 12px 0 12px 25px;
   text-decoration: none;
-  width: 150px;
-  margin: 0;
   box-sizing: border-box;
-  text-align: left;
+  //width: 150px;
+  //margin: 0;
+  //box-sizing: border-box;
+  //text-align: left;
+}
+
+.button_blue {
+  font-size: 16px;
+  line-height: 19px;
+  padding: 10px 25px;
+
+  color: var(--white);
+  background: var(--blue);
+}
+
+.button_rainbow {
+  font-size: 16px;
+  line-height: 19px;
+  padding: 10px 25px;
+  border: 2px solid red;
+  //border: 2px solid linear-gradient(red, blue);
+  //border-image-source: linear-gradient(106.07deg, #065DAD -11.65%, #FF0000 101.93%);
+  color: var(--blue);
 }

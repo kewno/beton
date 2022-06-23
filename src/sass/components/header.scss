@@ -5,24 +5,52 @@
 //	justify-content: center
 //	border-bottom: 1px solid gray
 .header {
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  background: var(--blue);
 
-  nav.menu {
-    max-width: 1242px;
+  .header__top {
+    padding: 18px 0 19px 0;
+    background: var(--grey-light);
+  }
+
+  .header__middle {
     display: flex;
-    justify-content: space-between;
+    padding: 11px 0 16px 0;
+    align-items: center;
+    //width: 1250px;
+    width: 1250px;
     margin: 0 auto;
-    padding: 0 10px;
+  }
+}
 
-    a.menu__elem {
-      font-weight: 700;
-      font-size: 16px;
-      line-height: 19px;
-      color: var(--white);
-      text-decoration: none;
-      padding: 19px 0;
-    }
+.phones {
+  display: flex;
+  max-width: 1250px;
+  margin: 0 auto;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
+.wrap-social-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  width: 496px;
+}
+
+.wrap-buttons {
+  display: flex;
+}
+
+.wrap-logo {
+  flex-grow: 1;
+  //margin-right: auto;
+}
+
+.wrap-button {
+  &:first-child {
+    margin-right: 13px;
   }
 }

@@ -1,0 +1,8 @@
+mixin video
+  video(loop='loop', playsInline='playsInline', crossOrigin='crossOrigin', controls='controls', autoplay='autoplay', poster='../../images/video-preload.png')
+    source(src='../../video/BoulevardDepo.mp4', type='video/mp4')
+  //.video
+    video(controls='controls', autoplay='autoplay')
+      source(src='../../video/BoulevardDepo.mp4', type='video/mp4')
+    video(controls='controls', loop='loop', crossOrigin='true', autoplay='autoplay')
+      source(src='../../video/BoulevardDepo.mp4', type='video/mp4')

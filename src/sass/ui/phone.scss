@@ -1,4 +1,4 @@
-.phone{
+.phone {
   display: flex;
   background: none;
   width: auto;
@@ -14,7 +14,6 @@
     font-size: 14px;
     color: var(--black);
     margin: 0 0 5px 0;
-    //margin-bottom: 5px;
   }
 
   .text_wrap__address {
@@ -24,28 +23,28 @@
   }
 }
 
-//.phone {
-//  display: flex;
-//  background: var(--black);
-//  width: auto;
-//  .phone__icon {
-//    width: 17.14px;
-//    height: 18px;
-//    margin-right: 10px;
-//  }
-//}
-//
-//.text_wrap {
-//  .text_wrap__number {
-//    font-size: 14px;
-//    color: var(--white);
-//    margin: 0 0 5px 0;
-//    //margin-bottom: 5px;
-//  }
-//
-//  .text_wrap__address {
-//    font-size: 14px;
-//    color: var(--white);
-//    margin: 0;
-//  }
-//}
+.phone_black {
+  .text_wrap {
+
+    .text_wrap__number {
+      color: var(--black);
+    }
+
+    .text_wrap__address {
+      color: var(--black);
+    }
+  }
+}
+
+.phone_white {
+  .text_wrap {
+
+    .text_wrap__number {
+      color: var(--white);
+    }
+
+    .text_wrap__address {
+      color: var(--white);
+    }
+  }
+}

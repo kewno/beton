@@ -1,11 +1,12 @@
-mixin concreteView(img, name)
+mixin concreteView(img, name, href)
   .wrap-concrete-view
     .concrete-view
       .concrete-view__wrap-text-arrow
         .wrap-text
           h2.wrap-text__concrete Бетон
           p.wrap-text__type= name
-        img(src = '../../images/arrow-right.png', class="arrow")
+        a(href= href).arrow-link
+          img(src = '../../images/arrow-right.png', class="arrow")
       img(src = img, class="concrete-view__img")
 
 

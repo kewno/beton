@@ -15,6 +15,53 @@
   }
 }
 
+
+
+.news-elem-long {
+  width: 614px;
+  height: 295px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  cursor: pointer;
+
+  .news-elem__img {
+    position: absolute;
+    top: 0;
+    width: 614px;
+    height: 295px;
+  }
+
+  .wrap-text {
+
+    .wrap-text__date {
+      padding-bottom: 11px;
+    }
+  }
+}
+
+
+.news-elem-small {
+  width: 295px;
+  height: 295px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  cursor: pointer;
+
+  .news-elem__img {
+    position: absolute;
+    top: 0;
+    width: 295px;
+    height: 295px;
+  }
+}
+
+
+
+
 .wrap-text {
   margin: 0 0 45px 29px;
 

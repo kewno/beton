@@ -1,5 +1,5 @@
-mixin phone(img, number, address)
-  .phone
+mixin phone(img, number, address, className)
+  div(class= className + ' phone')
     img(src= img, class='phone__icon')
     .text_wrap
       p.text_wrap__number= number

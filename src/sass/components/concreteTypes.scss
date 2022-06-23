@@ -1,0 +1,36 @@
+.concrete-types {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 50px 0 90px;
+
+  .concrete-types__quote {
+    font-weight: 300;
+    font-size: 46px;
+    line-height: 54px;
+    margin: 0;
+    margin-bottom: 19px;
+    color: var(--all-black);
+  }
+  .concrete-types__description {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 160%;
+    margin: 0;
+    margin-bottom: 90px;
+    color: var(--black);
+    max-width: 1212px;
+  }
+  .concrete-types__header {
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 120%;
+    margin: 0;
+    margin-bottom: 47px;
+    color: var(--black);
+  }
+}
+
+.concrete-view-wrap {
+  display: flex;
+  justify-content: space-between;
+}

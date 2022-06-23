@@ -1,0 +1,25 @@
+.wrap-footer-bottom {
+  background: var(--footer-bottom);
+}
+
+.footer-bottom {
+  display: flex;
+  padding: 24px 0;
+  align-items: center;
+  justify-content: end;
+  max-width: 1250px;
+  margin: 0 auto;
+
+  .footer-bottom__name {
+    font-weight: 400;
+    font-size: 14px;
+    //line-height: 140%;
+    opacity: 0.6;
+    color: #CDCFD0;
+    margin: 0;
+    margin-right: 12px;
+  }
+  .footer-bottom__amado {
+    height: 30.25px;
+  }
+}
