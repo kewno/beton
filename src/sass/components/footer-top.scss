@@ -6,3 +6,49 @@
 .footer-top {
 
 }
+
+.wrap-top-blocks {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1250px;
+  margin: 0 auto 66px;
+}
+
+.wrap-logo-text {
+  .wrap-logo-text__image {
+    margin-bottom: 27px;
+  }
+  .wrap-logo-text__description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: var(--white);
+    max-width: 326px;
+    margin: 0;
+  }
+}
+
+.wrap-menus-social {
+  max-width: 801px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.wrap-menus {
+  max-width: 531px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.wrap-email-social {
+  .wrap-email-social__quite {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+    color: var(--white);
+    margin: 0;
+    margin: 32px 0 15px;
+  }
+}

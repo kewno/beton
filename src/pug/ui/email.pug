@@ -1,4 +1,9 @@
-mixin email(img, text)
-  .email
-    img(src= img, class="email__img")
-    p.email__text= text
+mixin email(img, text, className)
+  if className === null
+    div(class='email')
+      img(src= img, class="email__img")
+      p.email__text= text
+  else if className === 'email_white'
+    div(class= 'email ' + className)
+      img(src= img, class="email__img")
+      p.email__text= text

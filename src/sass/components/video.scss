@@ -1,7 +1,31 @@
 .video {
-
+  position: relative;
+  //max-height: 400px;
+  .video__description {
+    position: absolute;
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 140%;
+    color: var(--white);
+    top: 174px;
+    left: 17%;
+    width: 564px;
+    margin: 0;
+  }
 }
+
 video {
   width: 100%;
-  height: 440px;
+  max-height: 440px;
+  //height: ;
+  margin: 0;
+}
+
+.image-play {
+  position: absolute;
+  //top: 202.5px;
+  //left: 50%;
+  top: 44%;
+  left: 48%;
+  cursor: pointer;
 }

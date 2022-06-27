@@ -1,16 +1,8 @@
 .btn {
-  //font-size: 16px;
-  //background: #0754A6;
-  //color: #FFFFFF;
   outline: none;
   border: none;
-  //padding: 12px 0 12px 25px;
   text-decoration: none;
   box-sizing: border-box;
-  //width: 150px;
-  //margin: 0;
-  //box-sizing: border-box;
-  //text-align: left;
 }
 
 .button_blue {
@@ -30,4 +22,19 @@
   //border: 2px solid linear-gradient(red, blue);
   //border-image-source: linear-gradient(106.07deg, #065DAD -11.65%, #FF0000 101.93%);
   color: var(--blue);
+}
+
+.button_works {
+  max-width: 190px;
+  width: 100%;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 120%;
+  border: 2px solid var(--white);
+
+  padding: 0;
+  padding: 11px 0 13px;
+  text-align: center;
+  color: var(--white);
+
 }

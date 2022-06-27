@@ -1,5 +1,7 @@
 .news-elem {
-  width: 610px;
+  width: 610px;;
+  //max-width: 610px;
+  //width: 100%;
   height: 615px;
   position: relative;
   display: flex;
@@ -19,6 +21,8 @@
 
 .news-elem-long {
   width: 614px;
+  //max-width: 614px;
+  //width: 100%;
   height: 295px;
   position: relative;
   display: flex;

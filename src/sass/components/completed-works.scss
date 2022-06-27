@@ -1,0 +1,23 @@
+.wrap-completed-works {
+  background: var(--black);
+}
+
+.completed-works {
+  padding: 100px 0;
+}
+
+.header-works {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1250px;
+  width: 100%;
+  margin: 0 auto;
+  .header-works__headline {
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 120%;
+    color: var(--white);
+    margin: 0;
+  }
+}

@@ -1,9 +1,11 @@
 include ../components/header
 include ../components/concreteTypes
 include ../components/video
+include ../components/completedWorks
 include ../components/news
 include ../components/delivery
 include ../components/footer
+//include ../../js/script.js
 
 
 doctype html
@@ -26,9 +28,19 @@ body
 
     +news()
 
+    +completedWorks()
+
     +delivery()
 
     +footer()
+
+  script
+    include ../../js/script.js
+  //script(src='../../js/script.js')
+  //include '../../js/script.js'
+  //script(src='../../js/script.js')
+  //script(type="text/javascript", src='../../js/script.js')
+
   //include ui-kit.pug
 
 

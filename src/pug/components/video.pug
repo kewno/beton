@@ -1,8 +1,10 @@
+//include ../../images/video-preload.png
+
 mixin video
-  video(loop='loop', playsInline='playsInline', crossOrigin='crossOrigin', controls='controls', autoplay='autoplay', poster='../../images/video-preload.png')
-    source(src='../../video/BoulevardDepo.mp4', type='video/mp4')
-  //.video
-    video(controls='controls', autoplay='autoplay')
-      source(src='../../video/BoulevardDepo.mp4', type='video/mp4')
-    video(controls='controls', loop='loop', crossOrigin='true', autoplay='autoplay')
-      source(src='../../video/BoulevardDepo.mp4', type='video/mp4')
+  .video
+    video(poster='../../images/video-preload.png', controls= false)
+      source(src='../../videos/BoulevardDepo.mp4', type="video/mp4")
+
+    h2.video__description Презентация бетонного завода «Вега»
+    img(src='../../images/play.png', class='image-play')
+

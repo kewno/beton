@@ -1,0 +1,8 @@
+include ../ui/button
+
+mixin completedWorks(elem)
+  .wrap-completed-works
+    .completed-works
+     .header-works
+       h3.header-works__headline Выполненные работы
+       +btn('Ссылка', '/', 'button_works')
