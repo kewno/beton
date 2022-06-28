@@ -48,3 +48,20 @@
     }
   }
 }
+
+
+@media (max-width: 360px) {
+  .text_wrap {
+    .text_wrap__number {
+      font-size: 13px;
+      //color: var(--black);
+      //margin: 0 0 5px 0;
+    }
+
+    .text_wrap__address {
+      font-size: 13px;
+      //color: var(--black);
+      //margin: 0;
+    }
+  }
+}

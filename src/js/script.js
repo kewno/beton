@@ -4,8 +4,9 @@ let videoName = document.querySelector('.video__description');
 
 let pointDelivery = document.querySelector('.delivery__point');
 let cardDelivery = document.querySelector('.delivery__card');
-let checkDelivery = true;
-//console.log(play) video__description delivery__card
+let arrowDelivery = document.querySelector('.delivery__arrow');
+let checkDelivery = false;
+//console.log(play) video__description delivery__card delivery__arrow
 
 
 play.onclick = () => {
@@ -15,16 +16,19 @@ play.onclick = () => {
   video.play()
 }
 //console.log(pointDelivery)
-pointDelivery.onclick = () => {
-  console.log(0)
+pointDelivery.onclick = () => toggleCard();
+arrowDelivery.onclick = () => toggleCard();
+
+let toggleCard = () => {
   if (checkDelivery) {
-    cardDelivery.style.height = "618.03px"
+    //cardDelivery.style.height = "618.03px"
     checkDelivery = false;
-    //cardDelivery.style.display = "none"
-    alert(1)
+    cardDelivery.style.display = "none";
+    arrowDelivery.style.transform = 'rotate(0deg)'; // 'deg'
   } else {
-    cardDelivery.style.height = "0"
+    //cardDelivery.style.height = "0"
     checkDelivery = true;
-    alert(2)
+    cardDelivery.style.display = 'block';
+    arrowDelivery.style.transform = 'rotate(180deg)';
   }
 }

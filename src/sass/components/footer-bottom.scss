@@ -4,7 +4,8 @@
 
 .footer-bottom {
   display: flex;
-  padding: 24px 0;
+  //padding: 24px 0;
+  padding: 24px 14px 24px 0;
   align-items: center;
   justify-content: end;
   max-width: 1250px;
@@ -21,5 +22,17 @@
   }
   .footer-bottom__amado {
     height: 30.25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-bottom {
+    //padding: 24px 14px 24px 0;
+  }
+}
+
+@media (max-width: 360px) {
+  .footer-bottom {
+    padding: 10px 16px 10px 0;
   }
 }

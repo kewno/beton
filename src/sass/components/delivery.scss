@@ -15,6 +15,7 @@
     color: var(--black);
     margin: 0;
     margin-bottom: 25px;
+    //padding-left: 15px;
   }
 
   .delivery__point {
@@ -29,8 +30,8 @@
   }
 
   .delivery__card {
-    width: 1920px;
-    margin-left: -875px;
+    width: 100%;
+    //margin-left: -875px;
     height: 618.03px;
   }
 }
@@ -38,5 +39,42 @@
 .wrap-point {
   width: 145px;
   position: relative;
-  margin: 0 auto -5px;
+  margin: 0 auto -4.5px;
+}
+
+@media (max-width: 1269px) {
+  .delivery {
+    margin-left: 19px;
+
+    .delivery__header {
+      margin-bottom: 25px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .delivery {
+
+    .delivery__header {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media (max-width: 460px) {
+  .delivery {
+    .delivery__header {
+      font-size: 32px;
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .delivery {
+    margin-left: 16px;
+    .delivery__header {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+  }
 }

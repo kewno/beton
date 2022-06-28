@@ -20,3 +20,15 @@
   }
 }
 
+@media (max-width: 768px) {
+  .email {
+    .email__img {
+      width: 26px;
+      height: 17.81px;
+    }
+    .email__text {
+      font-size: 16px;
+    }
+  }
+}
+

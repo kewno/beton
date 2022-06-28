@@ -4,6 +4,7 @@ include ../components/video
 include ../components/completedWorks
 include ../components/news
 include ../components/delivery
+include ../components/map
 include ../components/footer
 //include ../../js/script.js
 
@@ -32,27 +33,18 @@ body
 
     +delivery()
 
+    +map()
+
     +footer()
 
   script
     include ../../js/script.js
-  //script(src='../../js/script.js')
+  //script(type="module")
+    //include ../../js/slider.js
+  //script(src='../../js/script.js') <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   //include '../../js/script.js'
   //script(src='../../js/script.js')
   //script(type="text/javascript", src='../../js/script.js')
 
   //include ui-kit.pug
 
-
-  //include ../components/header.pug
-  //
-  //.swiper-container
-  //	.swiper-wrapper
-  //		.swiper-slide
-  //			img(src="./images/jaba.png")
-  //		.swiper-slide
-  //			img(src="./images/jaba.png")
-  //		.swiper-slide
-  //			img(src="./images/jaba.png")
-  //		.swiper-slide
-  //			img(src="./images/jaba.png")

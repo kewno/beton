@@ -33,13 +33,14 @@
     "html-loader": "^1.1.0",
     "html-webpack-plugin": "^4.3.0",
     "mini-css-extract-plugin": "^0.9.0",
+    "postcss": "^8.4.14",
     "postcss-loader": "^3.0.0",
     "pug": "^3.0.0",
     "pug-loader": "^2.4.0",
-    "sass": "^1.26.5",
+    "sass": "^1.53.0",
     "sass-loader": "^8.0.2",
     "style-loader": "^1.2.1",
-    "webpack": "^4.43.0",
+    "webpack": "^4.46.0",
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.11.0"
   },
@@ -47,6 +48,7 @@
     "@babel/polyfill": "^7.8.7",
     "jquery": "^3.5.1",
     "normalize.css": "^8.0.1",
+    "swiper": "^5.4.1",
     "validate-form.js": "^1.0.0"
   }
 }
