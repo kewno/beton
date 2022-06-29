@@ -1,17 +1,20 @@
 let video = document.querySelector('video');
 let play = document.querySelector('.image-play');
-let videoName = document.querySelector('.video__description');
+let videoName = document.querySelector('.video__explanation');
 
 let pointDelivery = document.querySelector('.delivery__point');
 let cardDelivery = document.querySelector('.delivery__card');
 let arrowDelivery = document.querySelector('.delivery__arrow');
 let checkDelivery = false;
-//console.log(play) video__description delivery__card delivery__arrow
 
+let pointMobileMenu = document.querySelector('.mobile-menu');
+let mobileMenu = document.querySelector('.wrap-menu-mob');
+let isOpenMenu = false;
+
+pointMobileMenu.onclick = () => toggleMenu();
 
 play.onclick = () => {
   video.controls = true;
-  play.style.display = "none";
   videoName.style.display = "none";
   video.play()
 }
@@ -31,4 +34,13 @@ let toggleCard = () => {
     cardDelivery.style.display = 'block';
     arrowDelivery.style.transform = 'rotate(180deg)';
   }
+}
+
+let toggleMenu = () => {
+  if (isOpenMenu) {
+    mobileMenu.style.display = 'none';
+  } else {
+    mobileMenu.style.display = 'block';
+  }
+  isOpenMenu = !isOpenMenu;
 }

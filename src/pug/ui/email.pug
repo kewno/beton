@@ -7,3 +7,7 @@ mixin email(img, text, className)
     div(class= 'email ' + className)
       img(src= img, class="email__img")
       p.email__text= text
+  else if className === 'email_black'
+    div(class= 'email ' + className)
+      img(src= img, class="email__img")
+      p.email__text= text

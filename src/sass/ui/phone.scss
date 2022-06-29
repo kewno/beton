@@ -9,59 +9,109 @@
   }
 }
 
-.text_wrap {
-  .text_wrap__number {
+.text-wrap_phone {
+  .text-wrap_phone__number {
     font-size: 14px;
     color: var(--black);
     margin: 0 0 5px 0;
   }
 
-  .text_wrap__address {
+  .text-wrap_phone__address {
     font-size: 14px;
     color: var(--black);
     margin: 0;
   }
 }
 
-.phone_black {
-  .text_wrap {
+//.phone_blue {
+//  .phone__icon {
+//
+//  }
+//}
 
-    .text_wrap__number {
+.phone_black {
+  .text-wrap_phone {
+
+    .text-wrap_phone__number {
       color: var(--black);
     }
 
-    .text_wrap__address {
+    .text-wrap_phone__address {
       color: var(--black);
     }
   }
 }
 
 .phone_white {
-  .text_wrap {
+  .text-wrap_phone {
 
-    .text_wrap__number {
+    .text-wrap_phone__number {
       color: var(--white);
     }
 
-    .text_wrap__address {
+    .text-wrap_phone__address {
       color: var(--white);
     }
   }
 }
 
+@media (max-width: 768px) {
+  .phone_blue {
+    width: 100%;
+    background: var(--grey-light);
+    margin-bottom: 4px;
+    padding: 0 16px 0;
+    .phone__icon {
+      display: none;
+
+    }
+    .text-wrap_phone {
+      display: flex;
+      justify-content: space-between;
+      max-width: 566px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 20px 0 18px 0;
+      //&:last-child {
+      //
+      //}
+
+      .text-wrap_phone__number {
+        margin: 0;
+        font-size: 16px;
+        color: var(--ocean);
+        font-weight: 700;
+      }
+      .text-wrap_phone__address {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media (max-width: 440px) {
+  .phone_blue {
+    .text-wrap_phone {
+      padding: 8px 0;
+      .text-wrap_phone__number {
+        font-size: 12px;
+      }
+
+      .text-wrap_phone__address {
+        font-size: 12px;
+      }
+    }
+  }
+}
 
 @media (max-width: 360px) {
-  .text_wrap {
-    .text_wrap__number {
+  .text-wrap_phone {
+    .text-wrap_phone__number {
       font-size: 13px;
-      //color: var(--black);
-      //margin: 0 0 5px 0;
     }
 
-    .text_wrap__address {
+    .text-wrap_phone__address {
       font-size: 13px;
-      //color: var(--black);
-      //margin: 0;
     }
   }
 }

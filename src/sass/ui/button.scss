@@ -5,6 +5,12 @@
   box-sizing: border-box;
 }
 
+.phones__bth-header {
+  display: none;
+  width: 100%;
+  text-align: center;
+}
+
 .button_blue {
   font-size: 16px;
   line-height: 19px;
@@ -31,10 +37,13 @@
   font-size: 18px;
   line-height: 120%;
   border: 2px solid var(--white);
-
-  padding: 0;
   padding: 11px 0 13px;
   text-align: center;
   color: var(--white);
+}
 
+@media (max-width: 768px) {
+  .phones__bth-header {
+    display: block;
+  }
 }

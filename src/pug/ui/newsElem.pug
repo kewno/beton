@@ -1,6 +1,6 @@
-mixin newsElem(date, text, src, className)
-  div(class= className)
-    .wrap-text
-      p.wrap-text__date= date
-      p.wrap-text__text= text
-    img(class='news-elem__img', src= src)
+mixin newsElem(date, text, img, className)
+  div(class= className, style=`background: url("${img}") repeat;`)
+    .wrap-text-news
+      p.wrap-text-news__date= date
+      p.wrap-text-news__text= text
+    //img(class='news-elem__img', src= src)

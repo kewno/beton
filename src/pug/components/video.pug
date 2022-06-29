@@ -4,7 +4,8 @@ mixin video
   .video
     video(poster='../../images/video-preload.png', controls= false)
       source(src='../../videos/BoulevardDepo.mp4', type="video/mp4")
-
-    h2.video__description Презентация бетонного завода «Вега»
-    img(src='../../images/play.png', class='image-play')
+    .video__explanation
+      .wrap-play-image
+        h2.video__description Презентация бетонного завода «Вега»
+        img(src='../../images/play.png', class='image-play')
 

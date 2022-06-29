@@ -18,6 +18,11 @@
       color: var(--white);
     }
   }
+  &.email_black {
+    .email__text {
+      color: var(--black);
+    }
+  }
 }
 
 @media (max-width: 768px) {

@@ -1,17 +1,36 @@
 include ../ui/email
+include ../ui/social
 
-mixin menuMobile(elem, phones, checked, setChecked)
-  img(src="../../images/menu-burger.png", class="menu-icon", onclick= () => setChecked() )
-  - if (checked)
-    .wrap-menu-mob
-      nav.menu-mob
-        .container-menu-elems
-          each el in elem
-            a.menu-mob__elem(href="/")= el
-              img.arrow(src='../../images/mob-arrow-black.png')
-        .container-phone
-          each el in phones
-            .wrap-phone
-              +phone('../../images/phone-black.png', el.phone, el.name)
-        .wrap-email
-          +email('../../images/email.png', 'vegabeton@mail.ru')
+mixin menuMobile(elem, phones)
+  .wrap-menu-mob
+    nav.menu-mob
+      .container-menu-elems
+        each el in elem
+          a.menu-mob__elem(href="/")= el
+            img.arrow(src='../../images/mob-arrow-black.png')
+      .container-phone
+        each el in phones
+          .wrap-phone
+            +phone('../../images/phone-black.png', el.phone, el.name)
+      .wrap-email
+        +email('../../images/email.png', 'vegabeton@mail.ru', 'email_black')
+      .menu-mobile-social
+        +social()
+
+
+
+
+//img(src="../../images/menu-burger.png", class="menu-icon", onclick= () => setChecked() )
+//  - if (checked)
+//  .wrap-menu-mob
+//    nav.menu-mob
+//      .container-menu-elems
+//        each el in elem
+//          a.menu-mob__elem(href="/")= el
+//            img.arrow(src='../../images/mob-arrow-black.png')
+//      .container-phone
+//        each el in phones
+//          .wrap-phone
+//            +phone('../../images/phone-black.png', el.phone, el.name)
+//      .wrap-email
+//        +email('../../images/email.png', 'vegabeton@mail.ru')

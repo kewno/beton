@@ -96,7 +96,7 @@
 
 @media (max-width: 460px) {
   .phones {
-    & > * {
+    & > .phone_white {
       margin-bottom: 25px;
     }
     & > *:last-child {
