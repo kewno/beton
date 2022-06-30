@@ -1,0 +1,42 @@
+mixin mainSlaider
+  .main-slider
+    //img(class='swiper-button swiper-button-prev', src='../../images/arrow-works-left.png')
+    .swiper-wrapper
+      .swiper-slide
+        img(class='swiper-slide__image', src='../../images/main-slider-1.png')
+        .wrap-information-slider
+          .information-slider
+            .information-slider__block
+              h3.headline Линейный насос в аренду
+              .description-slider
+                p.description-slider__text-prev До
+                h2.description-slider__text-big 150
+                p.description-slider__text-next метров — высота подачи бетонной смеси
+              p.number-slider
+                span.number-slide__coll 04
+                span.number-slide__all-coll /05
+              .information-slider-back
+            .information-slider__wrap-buttons
+              +btn('Заказать звонок', '/', 'button_blue')
+              +btn('Все работы', '/', 'button_works')
+      .swiper-slide
+        img(class='swiper-slide__image', src='../../images/main-slider-1.png')
+    .swiper-pagination
+    .control-slider
+      img(class='control-slider__arrow control-slider__arrow_left', src='../../images/arrow-works-left.png')
+      img(class='control-slider__arrow control-slider__arrow_right', src='../../images/arrow-works-right.png')
+    //.information-slider
+    //  .information-slider__block
+    //    h3.headline Линейный насос в аренду
+    //    .description-slider
+    //      p.description-slider__text-prev До
+    //      h2.description-slider__text-big 150
+    //      p.description-slider__text-next метров — высота подачи бетонной смеси
+    //    p.number-slider
+    //      span.number-slide__coll 04
+    //      span.number-slide__all-coll /05
+    //  .information-slider__wrap-buttons
+    //    +btn('Заказать звонок', '/', 'button_blue')
+    //    +btn('Все работы', '/', 'button_works')
+  //.control-slider
+  //  img(class='../../images/mob-arrow-black.png')

@@ -1,7 +1,9 @@
 .wrap-menu {
   width: 100%;
   background: var(--blue);
-
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 .menu {
@@ -28,6 +30,12 @@
     .menu__elem {
       padding: 10px 30px;
     }
+  }
+}
+
+@media (max-width: 768px) {
+  .wrap-menu {
+    display: none;
   }
 }
 

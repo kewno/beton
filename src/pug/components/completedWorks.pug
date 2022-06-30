@@ -2,27 +2,25 @@ include ../ui/button
 include ../ui/completedWorksElem
 
 mixin completedWorks(elem)
-  .wrap-completed-works
-    .completed-works
-     .header-works
-       h3.header-works__headline Выполненные работы
-       +btn('Все работы', '/', 'button_works')
-    .slider
-      .swiper-container
-        //img(class='swiper-button swiper-button-prev', src='../../images/arrow-works-left.png')
-        .swiper-wrapper
-          .swiper-slide
-            +completedWorksElem('../../images/compete-works-mon.png', 'Поставка бетона для Пермского Успенского женского монастыря ул. Плеханова 39')
-          .swiper-slide
-            +completedWorksElem('../../images/compete-works-mon.png', 'Поставка бетона на фабрику Гознак г. Краснокамск')
-          .swiper-slide
-            +completedWorksElem('../../images/compete-works-mon.png', 'Гостиница на территории Белогорского монастыря')
-          .swiper-slide
-            +completedWorksElem('../../images/compete-works-mon.png', 'Клуб Жебревель в поселке Жебреи')
-          .swiper-slide
-            +completedWorksElem('../../images/compete-works-mon.png', 'Поставка бетона для Пермского Успенского женского монастыря ул. Плеханова 39')
-        //img(class='swiper-button swiper-button-next', src='../../images/arrow-works-right.png')
-    .wrap-completed-btn
-      +btn('Все работы', '/', 'button_works')
-    //+btn('Все работы', '/', 'button_works')
-
+    .wrap-completed-works
+      .completed-works
+       .header-works
+         h3.header-works__headline Выполненные работы
+         +btn('Все работы', '/', 'button_works')
+      .slider
+        .swiper-container
+          img(class='swiper-button swiper-button-prev', src='../../images/point-left.svg')
+          .swiper-wrapper
+            .swiper-slide
+              +completedWorksElem('../../images/compete-works-mon.png', 'Поставка бетона для Пермского Успенского женского монастыря ул. Плеханова 39')
+            .swiper-slide
+              +completedWorksElem('../../images/compete-works-mon.png', 'Поставка бетона на фабрику Гознак г. Краснокамск')
+            .swiper-slide
+              +completedWorksElem('../../images/compete-works-mon.png', 'Гостиница на территории Белогорского монастыря')
+            .swiper-slide
+              +completedWorksElem('../../images/compete-works-mon.png', 'Клуб Жебревель в поселке Жебреи')
+            .swiper-slide
+              +completedWorksElem('../../images/compete-works-mon.png', 'Поставка бетона для Пермского Успенского женского монастыря ул. Плеханова 39')
+          img(class='swiper-button swiper-button-next', src='../../images/point-right.svg')
+      .wrap-completed-btn
+        +btn('Все работы', '/', 'button_works')

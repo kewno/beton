@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-
   .header__top {
     padding: 18px 0 19px 0;
     background: var(--grey-light);
@@ -15,6 +14,11 @@
     max-width: 1250px;
     width: 100%;
     margin: 0 auto;
+  }
+
+  .header__bottom {
+    position: sticky;
+    top: 0;
   }
 }
 

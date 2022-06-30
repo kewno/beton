@@ -6,6 +6,7 @@ include ../components/news
 include ../components/delivery
 include ../components/map
 include ../components/footer
+include ../components/mainSlaider
 //include ../../js/script.js
 
 
@@ -23,6 +24,9 @@ body
   +header(elemMenu)
 
   main
+    +menu(elemMenu)
+    +mainSlaider()
+
     +concreteTypes()
 
     +video()
