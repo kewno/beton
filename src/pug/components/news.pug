@@ -1,23 +1,24 @@
 include ../ui/newsElem
 
 mixin news
-  .news
-    .wrap-header-btn
-      .news__header Новости
-      .news__wrap-btn
-        +btn('Все новости', '/', 'button_rainbow')
-    .wrap-news-elems
-      .wrap-news-elem
-        +newsElem('02.11.2020', 'Александр Капитонов, директор ООО «Сеть \n' +
-        'бетонных заводов ВЕГА», рассказал об опыте работы \n' +
-        'с AKKERMANN cement', '../../images/news-1.png', 'news-elem')
-      .right-news
+  .container
+    .news
+      .wrap-header-btn
+        .news__header Новости
+        .news__wrap-btn
+          +btn('Все новости', '/', 'button_rainbow')
+      .wrap-news-elems
         .wrap-news-elem
-          +newsElem('14.07.2020', 'Новый видеоролик о сети бетонных заводов «Вега»', '../../images/news-1.png', 'news-elem-long')
-        .bottom-news
+          +newsElem('02.11.2020', 'Александр Капитонов, директор ООО «Сеть \n' +
+          'бетонных заводов ВЕГА», рассказал об опыте работы \n' +
+          'с AKKERMANN cement', '../../images/news-1.png', 'news-elem')
+        .right-news
           .wrap-news-elem
-            +newsElem('30.06.2020', 'Компания «Бетонный завод «Вега» прошла аттестацию лаборатории метрологической службы Пермского края', '../../images/news-1.png', 'news-elem-small')
-          .wrap-news-elem
-            +newsElem('07.04.2020', 'Бетонные заводы компании «Вега» продолжают работу', '../../images/news-1.png', 'news-elem-small')
-    .wrap-news-btn
-      +btn('Все новости', '/', 'button_rainbow')
+            +newsElem('14.07.2020', 'Новый видеоролик о сети бетонных заводов «Вега»', '../../images/news-1.png', 'news-elem-long')
+          .bottom-news
+            .wrap-news-elem
+              +newsElem('30.06.2020', 'Компания «Бетонный завод «Вега» прошла аттестацию лаборатории метрологической службы Пермского края', '../../images/news-1.png', 'news-elem-small')
+            .wrap-news-elem
+              +newsElem('07.04.2020', 'Бетонные заводы компании «Вега» продолжают работу', '../../images/news-1.png', 'news-elem-small')
+      .wrap-news-btn
+        +btn('Все новости', '/', 'button_rainbow')

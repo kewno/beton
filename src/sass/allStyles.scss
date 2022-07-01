@@ -11,3 +11,11 @@
   --ocean: #1980B6;
   --greys: #C1C1C1;
 }
+
+.container {
+  max-width: 1250px;
+  width: 100%;
+  padding: 0px 16px; // 0 32px 0 16px
+  margin: 0 auto;
+  box-sizing: border-box;
+}

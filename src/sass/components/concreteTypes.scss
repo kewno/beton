@@ -1,6 +1,7 @@
 .concrete-types {
-  max-width: 1250px;
-  margin: 0 auto;
+  //max-width: 1250px;
+  //margin: 0 auto;
+  width: 100%;
   padding: 50px 0 90px;
 
   .concrete-types__quote {
@@ -35,15 +36,16 @@
   justify-content: space-between;
 }
 
-@media (max-width: 1249px) {
-  .concrete-types {
-    margin:0 16px;
-  }
-}
+//@media (max-width: 1249px) {
+//  .concrete-types {
+//    margin:0 32px 0 0;
+//  }
+//}
 
 @media (max-width: 1249px) {
   .concrete-view-wrap {
     flex-wrap: wrap;
+    //margin:0 32px 0 0;
   }
 }
 

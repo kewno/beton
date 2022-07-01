@@ -17,10 +17,20 @@
     .email__text {
       color: var(--white);
     }
+    .email__img {
+      svg {
+        stroke: var(--white);
+      }
+    }
   }
   &.email_black {
     .email__text {
       color: var(--black);
+    }
+    .email__img {
+      svg {
+        stroke: var(--black);
+      }
     }
   }
 }

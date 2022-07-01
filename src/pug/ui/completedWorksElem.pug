@@ -1,5 +1,5 @@
-mixin completedWorksElem(img, text)
+mixin completedWorksElem(img, text, href)
   .completed_works_elem
     img(src= img, class='completed_works_elem__img')
-    p.completed_works_elem__text= text
-
+    //p.completed_works_elem__text= text
+    a(class='completed_works_elem__text', href='/')= text

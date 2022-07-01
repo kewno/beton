@@ -6,6 +6,9 @@
     width: 17.14px;
     height: 18px;
     margin-right: 10px;
+    svg {
+      fill: var(--black);
+    }
   }
 }
 
@@ -23,11 +26,13 @@
   }
 }
 
-//.phone_blue {
-//  .phone__icon {
-//
-//  }
-//}
+.phone_blue {
+  .phone__icon {
+    svg {
+      fill: var(--blue);
+    }
+  }
+}
 
 .phone_black {
   .text-wrap_phone {
@@ -38,6 +43,16 @@
 
     .text-wrap_phone__address {
       color: var(--black);
+    }
+  }
+
+  .phone__icon {
+    width: 17.14px;
+    height: 18px;
+    margin-right: 10px;
+
+    svg {
+      fill: var(--black);
     }
   }
 }
@@ -51,6 +66,15 @@
 
     .text-wrap_phone__address {
       color: var(--white);
+    }
+  }
+  .phone__icon {
+    width: 17.14px;
+    height: 18px;
+    margin-right: 10px;
+
+    svg {
+      stroke: var(--white);
     }
   }
 }

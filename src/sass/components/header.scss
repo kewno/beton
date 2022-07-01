@@ -40,6 +40,8 @@
 
 .wrap-buttons {
   display: flex;
+  width: 346px;
+  justify-content: space-around;
 }
 
 .mobile-menu {
@@ -50,9 +52,23 @@
   flex-grow: 1;
 }
 
-.wrap-button {
+.wrap-button  {
   &:first-child {
     margin-right: 13px;
+  }
+}
+
+.wrap-button_call {
+  width: 176px;
+  //width: 100%;
+}
+
+.wrap-button_price {
+  max-width: 157px;
+  height: 40px;
+  width: 100%;
+  .btn {
+    line-height: 36px;
   }
 }
 

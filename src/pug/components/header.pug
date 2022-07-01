@@ -11,10 +11,10 @@ mixin header(elemMenu)
   header.header
     .header__top
       .phones
-        +phone('../../images/phone-blue.png', '+7 (342) 203-07-88', 'Завод у Чусовского моста', 'phone_blue')
-        +phone('../../images/phone-blue.png', '+7 (342) 203-07-88', 'Завод у Чусовского моста', 'phone_blue')
-        +phone('../../images/phone-blue.png', '+7 (342) 203-07-88', 'Завод у Чусовского моста', 'phone_blue')
-        +phone('../../images/phone-blue.png', '+7 (342) 203-07-88', 'Завод у Чусовского моста', 'phone_blue')
+        +phone('+7 (342) 203-07-88', 'Завод у Чусовского моста', 'phone_blue')
+        +phone('+7 (342) 203-07-88', 'Завод у Чусовского моста', 'phone_blue')
+        +phone('+7 (342) 203-07-88', 'Завод у Чусовского моста', 'phone_blue')
+        +phone('+7 (342) 203-07-88', 'Завод у Чусовского моста', 'phone_blue')
         +btn('Скачать прайс-лист', '/', 'button_blue phones__bth-header')
     .header__middle
       .mobile-menu
@@ -24,9 +24,9 @@ mixin header(elemMenu)
       .wrap-social-button
         +social()
         .wrap-buttons
-          .wrap-button
+          .wrap-button_call
             +btn('Заказать звонок', '/', 'button_blue')
-          .wrap-button
+          .wrap-button_price
             +btn('Прайс-лист', '/', 'button_rainbow')
     .header__bottom
       // +menu(elemMenu)

@@ -14,9 +14,11 @@ include ../components/header.pug
 - let phones = [{name: 'Завод в Перми', phone: '+7 (342) 203-06-88'}, {name: 'Завод в Краснокамске', phone: '+7 (342) 271-04-08'}, {name: 'Завод у Чусовского моста', phone: '+7 (342) 203-07-88'}]
 
 
-.wrap-button
-  +btn('Кнопка', null)
-  +btn('Ссылка', '/')
+.wrap-buttons
+  .wrap-button
+    +btn('Кнопка', null)
+  .wrap-button
+    +btn('Ссылка', '/')
 
 +inputElem('text', 'Например, Иван Иванов', 'name')
 

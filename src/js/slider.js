@@ -9,24 +9,21 @@ document.addEventListener('DOMContentLoaded', () => {
         spaceBetween: 13,
         slidesPerView: 4
       },
-      1250: {
+      1075: {
         spaceBetween: 13,
         slidesPerView: 3
       },
-      768: {
-        slidesPerView: 2
-      },
-      360: {
+      767: {
+        slidesPerView: 2,
         spaceBetween: 10,
+      },
+      350: {
         slidesPerView: 1
       },
-      // 200: {
-      //   slidesPerView: 1
-      // }
     },
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: ".slider .point-next",
+      prevEl: ".slider .point-prev",
     },
   })
 })

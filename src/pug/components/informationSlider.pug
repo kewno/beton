@@ -1,0 +1,19 @@
+mixin informationSlider
+  .container
+    .wrap-information-slider
+      .information-slider
+        .information-slider__block
+          h3.headline Линейный насос в аренду
+          .description-slider
+            p.description-slider__text-prev До
+            h2.description-slider__text-big 150
+            p.description-slider__text-next метров — высота подачи бетонной смеси
+          p.number-slider
+            span.number-slide__coll 04
+            span.number-slide__all-coll /05
+          .information-slider-back
+        .information-slider__wrap-buttons
+          .wrap-button_call-slider
+            +btn('Заказать звонок', '/', 'button_blue')
+          .wrap-button_all-works_slider
+            +btn('Прайс-лист', '/', 'button_works')

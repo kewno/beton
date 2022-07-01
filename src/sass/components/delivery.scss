@@ -7,6 +7,7 @@
   max-width: 1250px;
   margin: 0 auto;
   padding-top: 90px;
+  padding-left: 19px;
 
   .delivery__header {
     font-weight: 700;
@@ -42,15 +43,11 @@
   margin: 0 auto -4.5px;
 }
 
-@media (max-width: 1269px) {
-  .delivery {
-    margin-left: 19px;
-
-    .delivery__header {
-      margin-bottom: 25px;
-    }
-  }
-}
+//@media (max-width: 1269px) {
+//  .delivery {
+//    padding-left: 19px;
+//  }
+//}
 
 @media (max-width: 768px) {
   .delivery {
@@ -71,7 +68,7 @@
 
 @media (max-width: 360px) {
   .delivery {
-    margin-left: 16px;
+    padding-left: 16px;
     .delivery__header {
       font-size: 24px;
       margin-bottom: 20px;

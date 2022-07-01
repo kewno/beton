@@ -13,6 +13,9 @@
     line-height: 24px;
     color: var(--white);
     margin-left: 20px;
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 20px;
     &:hover {
       text-decoration: underline;
     }

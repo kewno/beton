@@ -1,8 +1,7 @@
 .video {
   position: relative;
   z-index: 1;
-  height: 440px;
-  //height: auto;
+
 
   .video__explanation {
     width: 100%;
@@ -18,9 +17,10 @@
 
 video {
   width: 100%;
-  //max-height: 440px;
+  max-width: 1920px;
   height: 440px;
   margin: 0;
+  object-fit: cover;
 }
 
 .wrap-play-image {
@@ -30,6 +30,7 @@ video {
   max-width: 1240px;
   width: 100%;
   margin: 0 auto;
+  padding: 0 16px;
 }
 
 .video__description {
@@ -48,4 +49,43 @@ video {
   height: 75px;
   z-index: 3;
   margin-left: 40px;
+}
+
+@media (max-width: 768px) {
+  video {
+    width: 100%;
+    //max-width: 1920px;
+    height: 525px;
+    margin: 0;
+    object-fit: cover;
+  }
+  .wrap-play-image {
+    display: flex;
+    flex-direction: column;
+    height: 328px;
+    justify-content: space-around;
+  }
+  .image-play {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 572px) {
+  video {
+    width: 100%;
+    //max-width: 1920px;
+    height: 380px;
+  }
+  .wrap-play-image {
+    height: 328px;
+    margin-bottom: 130px;
+  }
+  .video__description {
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 140%;
+    color: var(--white);
+    max-width: 390px;
+    width: auto;
+  }
 }
