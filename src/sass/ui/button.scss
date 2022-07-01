@@ -24,18 +24,22 @@
   background: var(--blue);
 }
 
+.button_black-blue {
+  color: var(--white);
+  background: var(--button_black-blue);
+}
+
 .button_rainbow {
   font-size: 16px;
   line-height: 19px;
   border: 2px solid red;
-  //border: 2px solid linear-gradient(red, blue);
-  //border-image-source: linear-gradient(106.07deg, #065DAD -11.65%, #FF0000 101.93%);
+  //border: 2px solid transparent;
+  //border-image: linear-gradient(to right top, #065DAD, #FF0000); //to right, #065DAD 100%, #FF0000 100%
+  //border-image-slice: 2;
   color: var(--blue);
 }
 
 .button_works {
-  //width: 100%;
-  //font-weight: 200;
   font-size: 18px;
   line-height: 120%;
   border: 2px solid var(--white);
@@ -43,7 +47,7 @@
   color: var(--white);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) { // тут не должно быть
   .phones__bth-header {
     display: block;
   }

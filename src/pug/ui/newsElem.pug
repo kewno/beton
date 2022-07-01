@@ -1,5 +1,5 @@
 mixin newsElem(date, text, img, className)
-  div(class= className, style=`background: url("${img}") repeat;`)
+  div(class= className, style=`background: url("${img}") repeat center center;`)
     .wrap-text-news
       p.wrap-text-news__date= date
       p.wrap-text-news__text= text
