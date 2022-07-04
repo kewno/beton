@@ -1,6 +1,7 @@
 .request-call {
   background: var(--request-back);
   padding: 60px 0 98px;
+  margin: 105px 0 0;
 
   .request-call__headline {
     font-weight: 500;
@@ -33,7 +34,7 @@
 @media (max-width: 768px) {
   .request-call {
     padding: 50px 0 110px;
-
+    margin-top: 56px;
     .request-call__headline {
       margin: 0 0 29px;
     }
@@ -60,6 +61,7 @@
 @media (max-width: 360px) {
   .request-call {
     padding: 30px 0 130px;
+    margin-top: 26px;
 
     .request-call__headline {
       margin: 0 0 29px;

@@ -1,0 +1,34 @@
+.menu-products {
+  display: flex;
+  flex-direction: column;
+  max-width: 208px;
+
+  .menu-products__elem_active {
+    font-weight: 700;
+  }
+}
+
+.menu-products-elem {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: var(--black);
+  margin-bottom: 20px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+
+  .menu-products-elem__arrow {
+    width: 4.12px;
+    height: 8.18px;
+    margin-right: 15.63px ;
+  }
+
+  .menu-products-elem__text {
+    margin: 0;
+  }
+
+  &:last-child {
+    margin: 0;
+  }
+}

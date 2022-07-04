@@ -1,0 +1,18 @@
+.request-pros {
+  .request-pros__src {
+
+  }
+  .request-pros__text {
+    margin: 12px 0 0;
+  }
+}
+
+@media (max-width: 670px) {
+  .request-pros {
+    width: 100%;
+    margin-bottom: 30px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.products-poster {
+  padding: 80px 0 80px 20px;
+  max-width: 200px;
+  margin-top: 60px;
+  .products-poster__headline {
+    color: var(--white);
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    line-height: 26px;
+  }
+  .products-poster__href {
+    border: 2px solid var(--white);
+    color: var(--white);
+    text-decoration: none;
+    padding: 15px 5px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+}

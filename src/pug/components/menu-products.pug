@@ -1,0 +1,7 @@
+mixin menuProducts(elem)
+  .menu-products
+    each el in elem
+      a(href='/').menu-products-elem
+        img(src='../../images/menu-products.png').menu-products-elem__arrow
+        p.menu-products-elem__text= el
+

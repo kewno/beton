@@ -1,8 +1,12 @@
-mixin btn(text, href, className)
+mixin btn(text, href, className, img)
   if href === null
     button(class= className + ' btn')= text
   else
-    a(class= className + ' btn', href= href)= text
+    if img === null
+      a(class= className + ' btn', href= href)= text
+    else
+      a(class= className + ' btn', href= href)= text
+        img(src= img).button_images__image
 
     //mixin btn(text, href, img)
     //  if href === null

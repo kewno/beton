@@ -1,0 +1,9 @@
+.products-left-block {
+  margin-right: 62px;
+}
+
+@media (max-width: 992px)  {
+  .products-left-block {
+    display: none;
+  }
+}

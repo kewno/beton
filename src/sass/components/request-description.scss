@@ -1,4 +1,6 @@
 .request-description {
+  //display: flex;
+  //flex-direction: column;
   .request-description__headline {
     font-weight: 400;
     font-size: 25px;
@@ -10,5 +12,6 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 120%;
+    //max-width: 699px;
   }
 }

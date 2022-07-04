@@ -1,0 +1,155 @@
+.header-products {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  .header__top {
+    padding: 18px 0 19px 0;
+    background: var(--grey-light);
+  }
+
+  .header__middle {
+    display: flex;
+    padding: 11px 0 16px 0;
+    align-items: center;
+    max-width: 1250px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .header__bottom {
+    position: sticky;
+    top: 0;
+  }
+}
+
+.phones {
+  display: flex;
+  max-width: 1250px;
+  margin: 0 auto;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.wrap-social-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  width: 496px;
+
+  .wrap-mobile__logo {
+    display: none;
+  }
+}
+
+.wrap-buttons {
+  display: flex;
+  width: 346px;
+  justify-content: space-around;
+}
+
+.wrap-logo__mobile-logo {
+  display: none;
+}
+
+.wrap-logo {
+  flex-grow: 1;
+}
+
+.wrap-button  {
+  &:first-child {
+    margin-right: 13px;
+  }
+}
+
+.wrap-button_call {
+  width: 176px;
+}
+
+.wrap-button_price {
+  max-width: 157px;
+  height: 40px;
+  width: 100%;
+  .btn {
+    line-height: 36px;
+  }
+}
+
+.wrap-mobile__logo {
+  display: none;
+}
+
+@media (max-width: 1249px) {
+  .phones {
+    padding: 0 16px;
+  }
+  .wrap-social-button {
+    margin-right: 32px;
+  }
+
+  .header-products {
+    .header__middle {
+      padding: 11px 0 16px;
+      margin: 0 16px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .wrap-social-button {
+    margin-left: auto;
+    width: auto;
+  }
+  .wrap-mobile__logo {
+    display: inline-block;
+    margin: 0 55px 0 26px;
+  }
+  .wrap-buttons {
+    display: none;
+  }
+
+  .header-products {
+    .header__top {
+      background: none;
+      padding: 0px 0 9px 0;
+      display: none;
+    }
+    .header__middle {
+      padding: 0;
+      margin: 0;
+      order: -1;
+    }
+    .header__bottom {
+      display: none;
+    }
+  }
+  .mobile-menu {
+    cursor: pointer;
+    display: flex;
+    margin-right: 10px;
+  }
+  .wrap-logo {
+    .logo {
+      display: none;
+    }
+  }
+  .wrap-logo__mobile-logo {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 480px) {
+  .wrap-social-button {
+    display: none;
+    width: 80px;
+    height: 80px;
+  }
+  .mobile-menu {
+    display: flex;
+    width: 45px;
+    height: 45px;
+  }
+  .wrap-mobile__logo {
+    margin: 0 16px 0 0;
+  }
+}
