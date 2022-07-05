@@ -1,0 +1,6 @@
+include ../components/contactsContactElem
+
+mixin contactsContact(elems)
+  .contacts-contact
+    each el in elems
+      +contactsContactElem(el.headline, el.address, el.phone, el.time)

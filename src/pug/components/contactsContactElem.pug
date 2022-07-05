@@ -1,0 +1,10 @@
+mixin contactsContactElem(headline, address, phone, time)
+  .contacts-contact-elem
+    h3.contacts-contact-elem__headline= headline
+    p.contacts-contact-elem__address= address
+    p.contacts-contact-elem__phone
+      span.contacts-contact-elem__text-bold Тел.:&#32;
+      = phone
+    p.contacts-contact-elem__time
+      span.contacts-contact-elem__text-bold Ежедневно:&#32;
+      = time

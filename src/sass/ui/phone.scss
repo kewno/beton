@@ -79,6 +79,19 @@
   }
 }
 
+.phone_short {
+  align-items: center;
+  .phone__icon {
+    margin-right: 19.86px;
+  }
+
+  .text-wrap_phone {
+    .text-wrap_phone__number {
+      margin: 0;
+    }
+  }
+}
+
 @media (max-width: 768px) {
   .phone_blue {
     width: 100%;

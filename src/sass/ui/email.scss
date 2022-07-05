@@ -35,6 +35,22 @@
   }
 }
 
+.email_contacts {
+  .email__text {
+    font-size: 16px;
+    line-height: 120%;
+    color: var(--black);
+  }
+  .email__img {
+    width: 22px;
+    height: 15.07px;
+    margin-right: 15px;
+    svg {
+      stroke: var(--black);
+    }
+  }
+}
+
 @media (max-width: 768px) {
   .email {
     .email__img {

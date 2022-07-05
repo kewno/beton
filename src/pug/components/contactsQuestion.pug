@@ -1,0 +1,15 @@
+include ../ui/phone
+include ../ui/email
+
+mixin contactsQuestion
+  .contacts-question
+    p.contacts-question__headline По вопросам покупки бетона и аренды спецтехники обращайтесь по телефонам:
+    .contacts-question__wrap-phones
+      .contacts-wrap-phone
+        +phone('(342) 271-04-08', null, 'phone_short')
+      .contacts-wrap-phone
+        +phone('203-06-88', null, 'phone_short')
+      .contacts-wrap-phone
+        +phone('203-07-88', null, 'phone_short')
+    .contacts-question__wrap-email
+      +email('e-mail: vegabeton@mail.ru', 'email_contacts')

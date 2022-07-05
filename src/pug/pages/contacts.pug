@@ -1,0 +1,36 @@
+include ../components/header
+include ../components/footer
+include ../components/navigation
+include ../components/contactsQuestion
+include ../components/contactsMap
+include ../components/contactsOur
+include ../components/contactsForm
+
+
+doctype html
+html(lang="en")
+
+head
+  meta(charset="UTF-8")
+  meta(name="viewport" content="width=device-width, initial-scale=1.0")
+  title Employees
+
+body
+- let elemMenu = ['Компания', 'Видеоблог', 'Выполненные проекты', 'Бетон', 'Аренда бетононасоса', 'Лаборатория', 'Отзывы', 'Контакты']
+
++header(elemMenu)
+
+main.contacts-main
+  +menu(elemMenu)
+
+  .contacts-container
+    .contacts-wrap-navigation
+      +navigation
+
+    +contactsQuestion()
+
+    +contactsOur()
+
+    +contactsForm()
+
++footer()
