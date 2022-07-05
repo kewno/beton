@@ -1,0 +1,32 @@
+include ../components/header
+include ../components/footer
+include ../components/employeesLeftBlock
+include ../components/employeesRightBlock
+include ../components/requestCall
+include ../components/navigation
+
+doctype html
+html(lang="en")
+
+head
+  meta(charset="UTF-8")
+  meta(name="viewport" content="width=device-width, initial-scale=1.0")
+  title Employees
+
+body
+- let elemMenu = ['Компания', 'Видеоблог', 'Выполненные проекты', 'Бетон', 'Аренда бетононасоса', 'Лаборатория', 'Отзывы', 'Контакты']
+
++header(elemMenu)
+
+main.employees-main
+  +menu(elemMenu)
+
+  .employees-wrap-navigation
+    +navigation
+
+  h2.employees__headline Сотрудники
+  .wrap-employees-blocks
+    +employeesLeftBlock()
+    +employeesRightBlock()
+
++footer()

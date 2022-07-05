@@ -1,0 +1,7 @@
+mixin menuEmployees(elem)
+  .menu-employees
+    each el in elem
+      a(href='/').menu-employees-elem
+        img(src='../../images/menu-employees.png').menu-employees-elem__arrow
+        p.menu-employees-elem__text= el
+

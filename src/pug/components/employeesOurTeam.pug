@@ -1,0 +1,23 @@
+include ../components/employeesPerson
+include ../components/employeesPersonGroup
+
+mixin employeesOurTeam
+  .employees-our-team
+    h2.employees-our-team__headline Наша команда
+    p.employees-our-team__text Наши руководители – это международно признанные эксперты-практики из разных областей: информационных технологий, экономики, бизнес-аналитики и сферы безопасности. Они объединились, чтобы поделиться с организациями своим опытом и помочь им стать успешнее.
+
+    .employees-our-team__wrap-person
+      .wrap-employees-person
+        +employeesPerson('../../images/employees-avatar-1.png', 'Имя фамилия', 'Должность')
+      .wrap-employees-person
+        +employeesPerson('../../images/employees-avatar-1.png', 'Имя фамилия', 'Должность')
+    span.employees-our-team__line
+    .employees-our-team__wrap-person
+      .wrap-employees-person
+        +employeesPerson('../../images/employees-avatar-1.png', 'Имя фамилия', 'Должность')
+      .wrap-employees-person
+        +employeesPerson('../../images/employees-avatar-1.png', 'Имя фамилия', 'Должность')
+    +employeesPersonGroup('Завод на Шоссе Космонавтов')
+    +employeesPersonGroup('Завод на Шоссе Космонавтов')
+    +employeesPersonGroup('Завод на Шоссе Космонавтов')
+    +employeesPersonGroup('Завод на Шоссе Космонавтов')

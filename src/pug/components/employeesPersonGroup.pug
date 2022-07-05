@@ -1,0 +1,12 @@
+include ../components/employeesPerson
+
+mixin employeesPersonGroup(headline)
+  .employees-person-group
+    h3.employees-person-group__headline Завод на Шоссе Космонавтов
+    .employees-person-group__wrap-persons
+      .wrap-employees-person
+        +employeesPerson('../../images/employees-avatar-1.png', 'Имя фамилия', 'Должность')
+      .wrap-employees-person
+        +employeesPerson('../../images/employees-avatar-1.png', 'Имя фамилия', 'Должность')
+      .wrap-employees-person
+        +employeesPerson('../../images/employees-avatar-1.png', 'Имя фамилия', 'Должность')

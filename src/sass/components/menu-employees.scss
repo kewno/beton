@@ -1,0 +1,38 @@
+.menu-employees {
+  display: flex;
+  flex-direction: column;
+  max-width: 264px;
+
+  .menu-employees__elem_active {
+    font-weight: 700;
+  }
+}
+
+.menu-employees-elem {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: var(--blue);
+  margin-bottom: 20px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+
+  .menu-employees-elem__arrow {
+    width: 5px;
+    height: 10px;
+    margin-right: 20px ;
+  }
+
+  .menu-employees-elem__text {
+    margin: 0;
+  }
+
+  &:last-child {
+    margin: 0;
+  }
+}
+
+.menu-employees-elem_active {
+  font-weight: 700;
+}
