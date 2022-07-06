@@ -1,4 +1,4 @@
-include ../components/headerProducts
+include ../components/headerWithoutPhone
 include ../components/footer
 include ../components/productsLeftBlock
 include ../components/productsRightBlock
@@ -20,7 +20,8 @@ body
 
 main
   +menu(elemMenu)
-  +navigation
+  .products-wrap-navigation
+    +navigation
   .wrap-main-blocks
     +productsLeftBlock()
     +productsRightBlock()

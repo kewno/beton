@@ -20,12 +20,13 @@
   --line: #D9D9D9;
   --blue-white: #008EFF;
   --black-grey: #2E363F;
+  --beige: #F8F8F8;
 }
 
 .container {
   max-width: 1250px;
   width: 100%;
-  padding: 0px 16px; // 0 32px 0 16px
+  padding: 0 16px; // 0 32px 0 16px
   margin: 0 auto;
-  box-sizing: border-box;
+  //box-sizing: border-box;
 }

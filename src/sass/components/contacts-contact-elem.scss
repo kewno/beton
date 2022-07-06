@@ -3,12 +3,14 @@
   &:last-child {
     margin-right: 0;
   }
+  max-width: 248px;
   .contacts-contact-elem__headline {
     font-weight: 700;
     font-size: 14px;
     line-height: 120%;
     margin: 0 0 4px;
     color: var(--blue-white);
+    white-space: nowrap;
   }
   .contacts-contact-elem__address {
     font-weight: 400;
@@ -22,6 +24,7 @@
     line-height: 140%;
     margin: 0 0 26px;
     color: var(--blue-white);
+    max-width: 158px;
   }
   .contacts-contact-elem__time {
     margin: 0;
@@ -31,5 +34,29 @@
   .contacts-contact-elem__text-bold {
     font-weight: 700;
     color: var(--black-grey);
+  }
+}
+
+@media (max-width: 1094px) {
+  .contacts-contact-elem {
+    margin-right: 0;
+    width: 40%;
+
+    &:nth-child(odd) {
+      margin-right: 5px;
+    }
+    &:first-child {
+      margin-bottom: 90px;
+    }
+  }
+}
+
+@media (max-width: 630px) {
+  .contacts-contact-elem {
+    width: 100%;
+    margin-bottom: 50px;
+    &:first-child {
+      margin-bottom: 50px;
+    }
   }
 }

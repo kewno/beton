@@ -1,10 +1,25 @@
 .contacts-container {
-  max-width: 1031px;
+  max-width: 1079px; //1031
   width: 100%;
-  padding: 0 24px;
+  padding: 0 24px 50px;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .contacts-wrap-navigation {
   margin-top: 26px;
+}
+
+@media (max-width: 768px) {
+  @media (max-width: 480px) {
+    .contacts-container {
+      padding: 0 24px 70px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .contacts-container {
+    padding: 0 15px 70px;
+  }
 }

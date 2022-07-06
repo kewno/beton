@@ -4,20 +4,21 @@
 }
 
 .footer-top {
-
+  //margin: 0 auto 66px;
 }
 
 .wrap-top-blocks {
   display: flex;
   justify-content: space-between;
   max-width: 1250px;
-  margin: 0 auto 66px;
+  margin: 0 auto 68px;
   padding: 0 16px;
 }
 
 .wrap-logo-text {
+  margin-left: 8px;
   .wrap-logo-text__image {
-    margin-bottom: 27px;
+    margin-bottom: 25px;
   }
   .wrap-logo-text__description {
     font-weight: 400;
@@ -25,7 +26,7 @@
     line-height: 140%;
     color: var(--white);
     max-width: 326px;
-    margin: 0;
+    margin: 0 0 0 2px;
   }
 }
 
@@ -37,19 +38,24 @@
 }
 
 .wrap-menus {
-  max-width: 531px;
+  max-width: 539px;
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
 
 .wrap-email-social {
+  //.wrap-email-social__email {
+  //}
   .wrap-email-social__quite {
     font-weight: 400;
     font-size: 20px;
     line-height: 120%;
     color: var(--white);
-    margin: 32px 0 15px;
+    margin: 33px 0 17px 8px;
+  }
+  .wrap-email-social__social {
+    margin-left: 8px;
   }
 }
 

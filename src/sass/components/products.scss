@@ -4,3 +4,16 @@
   margin: 0 auto;
   padding: 0 16px;
 }
+
+.products-wrap-navigation {
+  max-width: 1031px;
+  width: 100%;
+  margin: 40px auto 47px;
+  padding: 0 16px;
+}
+
+@media (max-width: 768px) {
+  .products-wrap-navigation {
+    display: none;
+  }
+}

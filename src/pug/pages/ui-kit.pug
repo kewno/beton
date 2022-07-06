@@ -10,6 +10,9 @@ include ../ui/email
 include ../ui/input
 include ../ui/newsElem
 include ../components/header.pug
+include ../components/productsSlider
+include ../components/productsRequest
+
 - let elemMenu = ['Компания', 'Видеоблог', 'Выполненные проекты', 'Бетон', 'Аренда бетононасоса', 'Лаборатория', 'Отзывы', 'Контакты']
 - let phones = [{name: 'Завод в Перми', phone: '+7 (342) 203-06-88'}, {name: 'Завод в Краснокамске', phone: '+7 (342) 271-04-08'}, {name: 'Завод у Чусовского моста', phone: '+7 (342) 203-07-88'}]
 
@@ -24,7 +27,7 @@ include ../components/header.pug
 
 +social
 
-+email('../../images/email.png', 'vegabeton@mail.ru')
++email('vegabeton@mail.ru', 'email__black')
 +menu(elemMenu)
 +menuMobile(elemMenu, phones)
 +completedWorksElem('../../images/compete-works-mon.png', 'Поставка бетона для Пермского Успенского женского монастыря ул. Плеханова 39')
@@ -37,3 +40,10 @@ include ../components/header.pug
 +newsElem('02.11.2020', 'Александр Капитонов, директор ООО «Сеть \n' +
 'бетонных заводов ВЕГА», рассказал об опыте работы \n' +
 'с AKKERMANN cement', '../../images/news-1.png')
+
+
+.ui-wrap-products-slider
+  .products-right-block
+    .products-right-block__wrap_slider
+      +productsSlider()
+      +productsRequest()

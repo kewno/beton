@@ -39,7 +39,7 @@ video {
   line-height: 140%;
   color: var(--white);
   width: 564px;
-  margin: 0;
+  margin: 33px 0 0;
   z-index: 3;
 }
 
@@ -54,7 +54,6 @@ video {
 @media (max-width: 768px) {
   video {
     width: 100%;
-    //max-width: 1920px;
     height: 525px;
     margin: 0;
     object-fit: cover;
@@ -62,11 +61,25 @@ video {
   .wrap-play-image {
     display: flex;
     flex-direction: column;
-    height: 328px;
+    height: 450px;
     justify-content: space-around;
   }
   .image-play {
     margin-left: 0;
+  }
+
+  .video__description {
+    font-weight: 700;
+    line-height: 140%;
+    color: var(--white);
+    width: 636px;
+    margin: 121px 0 0;
+  }
+
+  .image-play {
+    width: 104px;
+    height: 104px;
+    margin-left: 20px;
   }
 }
 

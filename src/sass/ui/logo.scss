@@ -1,4 +1,12 @@
+.logo {
+  height: 72px;
+}
+
 @media (max-width: 768px) {
+  .logo {
+    align-items: center;
+    display: flex;
+  }
   .logo__image {
     width: 139px;
     height: 50.97px;

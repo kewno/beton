@@ -1,7 +1,5 @@
 .news {
-  //max-width: 1250px;
   width: 100%;
-  //margin: 0 auto;
   padding: 90px 0;
   height: 100%;
 
@@ -14,7 +12,7 @@
   }
 
   .news__wrap-btn {
-    margin-top: 29px;
+    margin-top: 18px;
     height: 46px;
     width: 190px;
     & > .btn {
@@ -26,8 +24,8 @@
 
 .wrap-header-btn {
   display: flex;
-  justify-content: space-between; //29
-  margin-bottom: 50px;
+  justify-content: space-between;
+  margin-bottom: 25px;
 }
 
 .wrap-news-elems {
@@ -72,7 +70,7 @@
 .wrap-news-btn {
   display: none;
   justify-content: center;
-  margin: 30px auto 0;
+  margin: 32px auto 0;
   height: 46px;
   width: 190px;
   & > .btn {
@@ -83,7 +81,9 @@
 
 
 @media (max-width: 992px) {
-  .news {
+  .news  {
+    padding: 70px 0;
+
     .news__wrap-btn {
       display: none;
     }

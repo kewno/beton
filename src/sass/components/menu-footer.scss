@@ -1,15 +1,22 @@
 .menu-footer {
   display: flex;
   flex-direction: column;
+  //flex-wrap: wrap;
+  //max-height: 200px; //164px
+  margin: 1px 0 0 9px;
 
   .menu-footer__elem {
     font-weight: 500;
     font-size: 20px;
-    line-height: 140%;
+    line-height: 130%;
     color: var(--white);
     text-decoration: none;
     margin-bottom: 20px;
   }
+}
+
+.wrap-email-social {
+  margin: 12px 0 0 0;
 }
 
 @media (max-width: 768px) {

@@ -16,11 +16,11 @@
   .text-wrap_phone__number {
     font-size: 14px;
     color: var(--black);
-    margin: 0 0 5px 0;
+    margin: 0 0 4px 0;
   }
 
   .text-wrap_phone__address {
-    font-size: 14px;
+    font-size: 13px;
     color: var(--grey-phone );
     margin: 0;
   }
@@ -30,6 +30,7 @@
   .phone__icon {
     svg {
       fill: var(--blue);
+      stroke: blue;
     }
   }
 }
@@ -100,7 +101,6 @@
     padding: 0 16px 0;
     .phone__icon {
       display: none;
-
     }
     .text-wrap_phone {
       display: flex;

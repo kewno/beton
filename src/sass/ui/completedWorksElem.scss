@@ -12,12 +12,19 @@
     font-size: 20px;
     line-height: 24px;
     color: var(--white);
-    margin-left: 20px;
+    margin: 15px 0 0 18px;
     display: inline-block;
     text-decoration: none;
-    margin-top: 20px;
     &:hover {
       text-decoration: underline;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .completed_works_elem {
+    .completed_works_elem__text {
+      margin: 18px 0 0 22px;
     }
   }
 }

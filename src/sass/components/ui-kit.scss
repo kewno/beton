@@ -31,7 +31,7 @@
 @import '../components/products-slider';
 @import '../components/navigation';
 @import '../components/products-request';
-@import '../components/header-products';
+@import 'header-without-phone';
 @import '../components/employees-person';
 @import '../components/employees-person-group';
 @import '../components/employees-text-block';
@@ -67,4 +67,8 @@
 
 .wrapPhone {
   max-width: 210px;
+}
+
+.ui-wrap-products-slider {
+  margin: 50px 0;
 }
