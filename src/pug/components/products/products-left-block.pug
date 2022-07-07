@@ -1,0 +1,14 @@
+include ../../ui/menu/menu-products
+include products-complete-work
+include products-poster
+
+mixin productsLeftBlock
+  - let elem = ['Бетон на гравии', 'Бетон на щебне', 'Мелкозернистый бетон', 'Строительный (кладочный) раствор ПЗ', 'Морозостойкий бетон'];
+  .products-left-block
+
+    +menuProducts(elem)
+
+    +productsCompleteWork()
+
+    +productsPoster()
+//Главная / Бетон / Бетон на гравии

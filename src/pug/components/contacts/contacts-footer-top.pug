@@ -1,0 +1,28 @@
+include ../../ui/menu/menu-footer
+include ../../ui/phone
+include ../../ui/email
+include ../../ui/social
+
+
+mixin contactsFooterTop
+  -
+    let elemMenuLeft = ['Компания', 'Видеоблог', 'Выполненные проекты']
+    let elemMenuCenter = ['Бетон', 'Аренда бетононасосов', 'Лаборатория']
+    let elemMenuRight = ['Отзывы', 'Контакты']
+
+  .footer-top
+    .wrap-top-blocks
+      .wrap-menus-social
+        .wrap-menus
+          +menuFooter(elemMenuLeft)
+          +menuFooter(elemMenuCenter)
+          +menuFooter(elemMenuRight)
+        .wrap-email-social
+          +email('../../images/email-white.png', 'vegabeton@mail.ru', 'email_white')
+          p.wrap-email-social__quite Подписаться:
+          +social()
+    .phones
+      +phone('+7 (342) 203-07-88', 'Завод у Чусовского моста', 'phone_white')
+      +phone('+7 (342) 203-07-88', 'Завод у Чусовского моста', 'phone_white')
+      +phone('+7 (342) 203-07-88', 'Завод у Чусовского моста', 'phone_white')
+      +phone('+7 (342) 203-07-88', 'Завод у Чусовского моста', 'phone_white')

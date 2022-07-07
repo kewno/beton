@@ -1,0 +1,42 @@
+.menu-footer {
+  //display: grid;
+  //grid-template-columns: 224px 220px; //auto auto 224px 220px minmax(0,2fr) minmax(0,2fr)
+  //grid-column-gap: 88px; //88pxminmax(10px, 88px)
+  //grid-template-rows: repeat(auto);
+  display: flex;
+  //flex-direction: column;
+  flex-wrap: wrap;
+  //max-height: 200px; //164px
+  margin: 1px 0 0 9px;
+  max-width: 531px;
+  //width: 100%;
+
+  .menu-footer__elem {
+    width: 50%;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 130%;
+    color: var(--white);
+    text-decoration: none;
+    margin-bottom: 20px;
+  }
+}
+
+.wrap-email-social {
+  margin: 12px 0 0 0;
+}
+
+@media (max-width: 768px) {
+  .menu-footer {
+
+    .menu-footer__elem {
+      //width: 40%;
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+@media (max-width: 360px) {
+
+}

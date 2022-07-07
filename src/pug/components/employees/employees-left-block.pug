@@ -1,0 +1,6 @@
+include ../../ui/menu/menu-employees
+
+mixin employeesLeftBlock
+  - let elem = ['О компании', 'Отзывы', 'Частые вопросы', 'Новости', 'Статьи', 'Способы оплаты', 'Глубинный вибратор бесплатно', 'ГОСТы'];
+  .employees-left-block
+    +menuEmployees(elem)

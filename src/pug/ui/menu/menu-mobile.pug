@@ -1,0 +1,39 @@
+include ../email
+include ../social
+
+mixin menuMobile(elem, phones)
+  .wrap-menu-mob
+    nav.menu-mob
+      .container-menu-elems
+        each el in elem
+          a.menu-mob__elem(href="/")= el
+            .arrow
+              <svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.4028 0L7 5.36729L1.4028 10.7346L0 9.39275L4.2014 5.36729L0 1.34182L1.4028 0Z" fill="#1C2229"/>
+              </svg>
+      .container-phone
+        each el in phones
+          .wrap-phone
+            +phone(el.phone, el.name  )
+      .wrap-email
+        +email('../../images/email.png', 'vegabeton@mail.ru', 'email_black')
+      .menu-mobile-social
+        +social()
+
+
+
+
+//img(src="../../images/menu-burger.png", class="menu-icon", onclick= () => setChecked() )
+//  - if (checked)
+//  .wrap-menu-mob
+//    nav.menu-mob
+//      .container-menu-elems
+//        each el in elem
+//          a.menu-mob__elem(href="/")= el
+//            img.arrow(src='../../images/mob-arrow-black.png')
+//      .container-phone
+//        each el in phones
+//          .wrap-phone
+//            +phone('../../images/phone-black.png', el.phone, el.name)
+//      .wrap-email
+//        +email('../../images/email.png', 'vegabeton@mail.ru')
