@@ -8,7 +8,7 @@
   margin: 0 auto;
   padding: 90px 19px 0;
 
-  .delivery__header {
+  &__header {
     font-weight: 700;
     font-size: 34px;
     line-height: 120%;
@@ -16,20 +16,19 @@
     margin: 0 0 19px;
   }
 
-  .delivery__point {
+  &__point {
     cursor: pointer;
   }
 
-  .delivery__arrow {
+  &__arrow {
     position: absolute;
     top: 32.6px;
     left: 55px;
     cursor: pointer;
   }
 
-  .delivery__card {
+  &__card {
     width: 100%;
-    //margin-left: -875px;
     height: 618.03px;
   }
 }
@@ -43,13 +42,13 @@
 @media (max-width: 768px) {
   .delivery {
     padding: 70px 17px 0;
-    .delivery__header {
+    &__header {
       margin-bottom: 25px;
     }
-    .delivery__point {
+    &__point {
       margin-left: 10px;
     }
-    .delivery__arrow {
+    &__arrow {
       left: 65px;
     }
   }
@@ -57,7 +56,7 @@
 
 @media (max-width: 460px) {
   .delivery {
-    .delivery__header {
+    &__header {
       font-size: 32px;
     }
   }
@@ -65,8 +64,9 @@
 
 @media (max-width: 360px) {
   .delivery {
-    padding-left: 16px;
-    .delivery__header {
+    padding: 45px 16px 0;
+    //padding-left: 16px;
+    &__header {
       font-size: 24px;
       margin-bottom: 20px;
     }

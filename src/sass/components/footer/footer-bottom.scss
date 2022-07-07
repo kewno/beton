@@ -10,21 +10,20 @@
   max-width: 1250px;
   margin: 0 auto;
 
-  .footer-bottom__name {
+  &__name {
     font-weight: 400;
     font-size: 14px;
     opacity: 0.6;
     color: #CDCFD0;
     margin: 5px 12px 0 0;
   }
-  .footer-bottom__amado {
+  &__amado {
     height: 30.25px;
   }
 }
 
 @media (max-width: 768px) {
   .footer-bottom {
-    //padding: 24px 14px 24px 0;
   }
 }
 

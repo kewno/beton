@@ -20,17 +20,17 @@
 }
 
 .products-slider-control {
-  .products-slider-control__elem {
+  &__elem {
     top: 107px;
     position: absolute;
     img {
       cursor: pointer;
     }
   }
-  .products-slider-control__elem_left {
+  &__elem_left {
     left: 0;
   }
-  .products-slider-control__elem_right {
+  &__elem_right {
     right: 0;
   }
 }
@@ -49,7 +49,7 @@
   justify-content: space-between;
   margin-top: 5px;
 
-  .wrap-pagination__elem {
+  &__elem {
     cursor: pointer;
     width: 83px;
     height: 83px;
@@ -91,7 +91,7 @@
       .swiper-slide {
         width: 100%;
         height: 230px;
-        .swiper-slide__image {
+        &__image {
           max-width: 330px;
         }
       }
@@ -103,7 +103,7 @@
     justify-content: space-between;
     margin-top: 5px;
 
-    .wrap-pagination__elem {
+    &__elem {
       cursor: pointer;
       width: 78px;
       height: 78px;

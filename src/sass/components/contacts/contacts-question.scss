@@ -1,15 +1,13 @@
 .contacts-question {
-  .contacts-question__headline {
+  &__headline {
     font-weight: 400;
     font-size: 16px;
     line-height: 120%;
     margin: 50px 0 21px;
     color: var(--black);
   }
-  .contacts-question__wrap-phones {
 
-  }
-  .contacts-question__wrap-email {
+  &__wrap-email {
     margin-top: 35px;
   }
 }

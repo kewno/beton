@@ -8,12 +8,12 @@ include ../../ui/menu/menu-mobile
 mixin header(elemMenu)
   header.header
     .header__top
-      .phones
+      .header-phones
         +phone('+7 (342) 203-06-88', 'г.Пермь, ул. Ш. Космонавтов', 'phone_blue')
         +phone('+7 (342) 203-05-90', 'г.Пермь, ул. Героев Хасана', 'phone_blue')
         +phone('+7 (342) 271-04-08', 'г. Краснокамск', 'phone_blue')
         +phone('+7 (342) 203-07-88', 'Завод у Чусовского моста', 'phone_blue')
-        .phones__button
+        .header-phones__button
           +btn('Скачать прайс-лист', '/', 'button_blue')
     .header__middle
       .mobile-menu
@@ -25,13 +25,12 @@ mixin header(elemMenu)
           +logo('../../images/logo-mob.png')
       .wrap-social-button
         +social()
-        .wrap-buttons
-          .wrap-button_call
+        .header-wrap-buttons
+          .header-wrap-buttons__call
             +btn('Заказать звонок', '/', 'button_blue')
-          .wrap-button_price
+          .header-wrap-buttons__price
             +btn('Прайс-лист', '/', 'button_rainbow')
     .header__bottom
-      // +menu(elemMenu)
     +menuMobile(
       ['Компания', 'Видеоблог', 'Выполненные проекты', 'Бетон', 'Аренда бетононасоса', 'Лаборатория', 'Отзывы', 'Контакты'],
       [{name: 'Завод в Перми', phone: '+7 (342) 203-06-88'}, {name: 'Завод в Краснокамске', phone: '+7 (342) 271-04-08'}, {name: 'Завод у Чусовского моста', phone: '+7 (342) 203-07-88'}])

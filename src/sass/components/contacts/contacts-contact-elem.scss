@@ -4,7 +4,7 @@
     margin-right: 0;
   }
   max-width: 248px;
-  .contacts-contact-elem__headline {
+  &__headline {
     font-weight: 700;
     font-size: 14px;
     line-height: 120%;
@@ -12,26 +12,26 @@
     color: var(--blue-white);
     white-space: nowrap;
   }
-  .contacts-contact-elem__address {
+  &__address {
     font-weight: 400;
     font-size: 14px;
     line-height: 140%;
     color: var(--black-grey);
     margin: 0 0 8px;
   }
-  .contacts-contact-elem__phone {
+  &__phone {
     font-size: 14px;
     line-height: 140%;
     margin: 0 0 26px;
     color: var(--blue-white);
     max-width: 158px;
   }
-  .contacts-contact-elem__time {
+  &__time {
     margin: 0;
     font-size: 14px;
     line-height: 140%;
   }
-  .contacts-contact-elem__text-bold {
+  &__text-bold {
     font-weight: 700;
     color: var(--black-grey);
   }

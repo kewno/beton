@@ -28,7 +28,7 @@
   .wrap-text-news {
     margin: 0 0 30px 13px;
 
-    .wrap-text-news__date {
+    &__date {
       padding-bottom: 12px;
     }
   }
@@ -53,26 +53,26 @@
 
   .wrap-text-news {
     margin: 0 0 30px 13px;
-    .wrap-text-news__date {
-
-    }
-    .wrap-text-news__text {
-
-    }
+    //&__date {
+    //
+    //}
+    //&__text {
+    //
+    //}
   }
 }
 
 .wrap-text-news {
   margin: 0 0 45px 29px;
 
-  .wrap-text-news__date {
+  &__date {
     font-weight: 300;
     font-size: 20px;
     padding-bottom: 20px;
     color: var(--white);
     margin: 0;
   }
-  .wrap-text-news__text {
+  &__text {
     font-weight: 500;
     font-size: 20px;
     color: var(--white);
@@ -98,7 +98,7 @@
 
     .wrap-text-news {
       margin: 0 0 25px 15.5px;
-      .wrap-text-news__date {
+      &__date {
         padding-bottom: 7px;
       }
     }
@@ -106,10 +106,10 @@
   .news-elem-long {
     .wrap-text-news {
       margin: 0 0 40px 32px;
-      .wrap-text-news__text {
+      &__text {
         font-size: 18px;
       }
-      .wrap-text-news__date {
+      &__date {
         padding-bottom: 20px;
       }
     }
@@ -118,10 +118,10 @@
   .wrap-text-news {
     margin: 0 0 35px 32px;
     max-width: 450px;
-    .wrap-text-news__text {
+    &__text {
       font-size: 18px;
     }
-    .wrap-text-news__date {
+    &__date {
       padding-bottom: 15px;
     }
   }
@@ -140,12 +140,28 @@
 
   .wrap-text-news {
     margin: 0 0 30px 16px;
-    .wrap-text-news__text {
+    &__text {
       font-size: 14px;
     }
     .wrap-text-news__date {
       padding-bottom: 10px;
       font-size: 14px;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .news-elem-long {
+    .wrap-text-news {
+      margin: 0 0 25px 15px;
+
+      &__text {
+        font-size: 14px;
+      }
+      &__date {
+        padding-bottom: 10px;
+        font-size: 14px;
+      }
     }
   }
 }

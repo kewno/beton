@@ -11,7 +11,7 @@
   max-width: 531px;
   //width: 100%;
 
-  .menu-footer__elem {
+  &__elem {
     width: 50%;
     font-weight: 500;
     font-size: 20px;
@@ -29,7 +29,7 @@
 @media (max-width: 768px) {
   .menu-footer {
 
-    .menu-footer__elem {
+    &__elem {
       //width: 40%;
       font-size: 16px;
       margin-bottom: 15px;
@@ -38,5 +38,17 @@
 }
 
 @media (max-width: 360px) {
+  .menu-footer {
 
+    &__elem {
+      width: 100%;
+      font-size: 18px;
+      margin-bottom: 11.5px;
+    }
+  }
+  .wrap-email-social {
+    &__email {
+      margin-left: 8px;
+    }
+  }
 }

@@ -1,9 +1,8 @@
 .contacts-map {
-  //width: auto;
   max-width: 1031px;
   margin-bottom: 30px;
 
-  .contacts-map__map {
+  &__map {
     width: 100%;
     height: 700px;
     max-width: 1031px;

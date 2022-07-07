@@ -3,7 +3,7 @@
   padding: 60px 0 98px;
   margin: 105px 0 0;
 
-  .request-call__headline {
+  &__headline {
     font-weight: 500;
     font-size: 30px;
     line-height: 35px;
@@ -35,7 +35,7 @@
   .request-call {
     padding: 50px 0 110px;
     margin-top: 56px;
-    .request-call__headline {
+    &__headline {
       margin: 0 0 29px;
     }
   }
@@ -44,15 +44,15 @@
     flex-wrap: wrap;
     width: 100%;
 
-    .wrap-inputs-request__input,
-    .wrap-inputs-request__button {
+    &__input,
+    &__button {
       max-width: 800px;
     }
 
-    .wrap-inputs-request__input {
+    &__input {
       margin: 0 0 20px 0;
     }
-    .wrap-inputs-request__button {
+    &__button {
       margin-top: 10px;
     }
   }
@@ -63,7 +63,7 @@
     padding: 30px 0 130px;
     margin-top: 26px;
 
-    .request-call__headline {
+    &__headline {
       margin: 0 0 29px;
       font-size: 30px;
       text-align: left;

@@ -6,16 +6,21 @@
   .logo {
     align-items: center;
     display: flex;
-  }
-  .logo__image {
-    width: 139px;
-    height: 50.97px;
+
+    &__image {
+      width: 139px;
+      height: 50.97px;
+    }
   }
 }
 
 @media (max-width: 480px) {
-  .logo__image {
-    width: 81.82px;
-    height: 30px;
+  .logo {
+    height: 45px;
+
+    &__image {
+      width: 81.82px;
+      height: 30px;
+    }
   }
 }

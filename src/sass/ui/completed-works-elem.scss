@@ -28,3 +28,16 @@
     }
   }
 }
+
+
+@media (max-width: 400px) {
+  .completed_works_elem {
+    height: 342px;
+    .completed_works_elem__text {
+      margin: 18px 0 0 20px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 110%;
+    }
+  }
+}

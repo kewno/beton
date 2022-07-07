@@ -1,16 +1,16 @@
 .employees-text-block {
-  .employees-text-block__text,
-  .employees-text-block__contact {
+  &__text,
+  &__contact {
     font-weight: 400;
     font-size: 16px;
     line-height: 140%;
     color: var(--black);
     margin: 0;
   }
-  .employees-text-block__text {
+  &__text {
     margin-bottom: 24px;
   }
-  .employees-text-block__contact {
+  &__contact {
     margin-bottom: 2px;
   }
 }

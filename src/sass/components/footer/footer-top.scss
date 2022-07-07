@@ -19,10 +19,10 @@
 
 .wrap-logo-text {
   margin-left: 8px;
-  .wrap-logo-text__image {
+  &__image {
     margin-bottom: 25px;
   }
-  .wrap-logo-text__description {
+  &__description {
     font-weight: 400;
     font-size: 14px;
     line-height: 140%;
@@ -53,14 +53,14 @@
 }
 
 .wrap-email-social {
-  .wrap-email-social__quite {
+  &__quite {
     font-weight: 400;
     font-size: 20px;
     line-height: 120%;
     color: var(--white);
     margin: 33px 0 17px 8px;
   }
-  .wrap-email-social__social {
+  &__social {
     margin-left: 8px;
   }
 }
@@ -76,11 +76,11 @@
   }
 
   .wrap-email-social {
-    .wrap-email-social__email {
+    &__email {
       display: flex;
       justify-content: right;
     }
-    .wrap-email-social__quite {
+    &__quite {
       font-size: 16px;
       margin-top: 33px;
     }
@@ -120,11 +120,21 @@
   }
   .wrap-menus {
     flex-direction: column;
-    margin-bottom: 18px;
+    margin-bottom: 0;
   }
 }
 
 @media (max-width: 460px) {
+  .wrap-email-social {
+    &__email {
+      display: flex;
+      justify-content: left;
+    }
+  }
+
+  .footer-top {
+    padding: 28px 8px 30px;
+  }
   .phones {
     & > .phone_white {
       margin-bottom: 25px;

@@ -3,7 +3,7 @@
   width: 100%;
   margin: 64px 0 0;
 
-  .employees-person-group__headline {
+  &__headline {
     margin: 0 0 42px;
     font-weight: 400;
     font-size: 24px;
@@ -11,7 +11,7 @@
     color: var(--black);
   }
 
-  .employees-person-group__wrap-persons {
+  &__wrap-persons {
     display: flex;
     justify-content: space-between;
 
@@ -30,7 +30,7 @@
   .employees-person-group {
     margin: 64px 0 0;
 
-    .employees-person-group__headline {
+    &__headline {
       margin: 0 0 31px;
     }
   }
@@ -46,13 +46,13 @@
   .employees-person-group {
     flex-wrap: wrap;
 
-    .employees-person-group__headline {
+    &__headline {
       font-size: 20px;
       line-height: 140%;
       margin: 0 0 30px;
     }
 
-    .employees-person-group__wrap-persons {
+    &__wrap-persons {
       flex-wrap: wrap;
     }
   }

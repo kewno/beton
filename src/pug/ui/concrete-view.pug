@@ -1,9 +1,11 @@
 mixin concreteView(img, name, href)
   .concrete-view(style=`background: url("${img}") repeat;`)
     .concrete-view__wrap-text-arrow
-      .wrap-text_concrete
-        h2.wrap-text_concrete__name Бетон
-        p.wrap-text_concrete__type= name
+      .concrete-wrap-text
+        h2.concrete-wrap-text__name Бетон
+        p.concrete-wrap-text__type= name
       .wrap-arrow
         a(href='/').arrow-href
-          img(src='../../images/arrow-right.png').arrow-img
+          img(src='../../images/arrow-right.png').arrow-href__img
+
+          //wrap-text_concrete

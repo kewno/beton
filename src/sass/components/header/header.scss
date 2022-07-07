@@ -4,12 +4,12 @@
   width: 100%;
   background: var(--beige);
 
-  .header__top {
+  &__top {
     padding: 18px 0 19px 0;
     background: var(--grey-light);
   }
 
-  .header__middle {
+  &__middle {
     display: flex;
     padding: 11px 0 16px 0;
     align-items: center;
@@ -18,20 +18,20 @@
     margin: 0 auto;
   }
 
-  .header__bottom {
+  &__bottom {
     position: sticky;
     top: 0;
   }
 }
 
-.phones {
+.header-phones {//phones
   display: flex;
   max-width: 1250px;
   margin: 0 auto;
   flex-direction: row;
   justify-content: space-between;
 
-  .phones__button {
+  &__button {
     margin-top: 4px;
     width: 100%;
     .btn {
@@ -66,37 +66,42 @@
 
 .wrap-logo {
   flex-grow: 1;
-  .wrap-logo__big-logo {
+  &__big-logo {
     display: block;
   }
-  .wrap-logo__mobile-logo {
+  &__mobile-logo {
     display: none;
     align-items: center;
   }
 }
-
-.wrap-button  {
+.wrap-button {
   &:first-child {
     margin-right: 13px;
   }
 }
+.header-wrap-buttons  {
+  //display: flex;
+  &__call {
+    width: 176px;
+  }
 
-.wrap-button_call {
-  width: 176px;
-  //width: 100%;
-}
-
-.wrap-button_price {
-  max-width: 157px;
-  height: 40px;
-  width: 100%;
-  .btn {
-    line-height: 36px;
+  &__price {
+    max-width: 157px;
+    height: 40px;
+    width: 100%;
+    .btn {
+      line-height: 36px;
+    }
   }
 }
 
 @media (max-width: 1249px) {
-  .phones {
+  .header-phones { //phones
+    display: flex;
+    flex-wrap: wrap;
+    //min-height: 111px;
+    //height: 100%;
+    align-content: space-between;
     padding: 0 16px;
   }
   .wrap-social-button {
@@ -104,7 +109,7 @@
   }
 
   .header {
-    .header__middle {
+    &__middle {
       padding: 11px 0 16px;
       margin: 0 16px;
     }
@@ -116,22 +121,22 @@
     margin-left: auto;
     width: auto;
   }
-  .wrap-buttons {
+  .header-wrap-buttons {
     display: none;
   }
 
   .header {
-    .header__top {
+    &__top {
       background: none;
       padding: 0 0 9px 0;
       margin-top: 9px;
     }
-    .header__middle {
+    &__middle {
       padding: 0;
       margin: 0;
       order: -1;
     }
-    .header__bottom {
+    &__bottom {
       display: none;
     }
   }
@@ -143,6 +148,15 @@
 }
 
 @media (max-width: 480px) {
+  .header {
+    &__top {
+      padding: 0 0 5px 0;
+      margin-top: 0;
+    }
+    &__middle {
+      box-shadow: 0 0 15px #DEDEDE;
+    }
+  }
   .wrap-social-button {
     display: none;
     width: 80px;
@@ -152,5 +166,18 @@
     display: flex;
     width: 45px;
     height: 45px;
+  }
+
+  .header-phones {
+    margin-top: 5px;
+    &__button {
+      margin-top: -3px;
+      width: 100%;
+      .btn {
+        height: 33px;
+        line-height: 33px;
+        font-size: 14px;
+      }
+    }
   }
 }

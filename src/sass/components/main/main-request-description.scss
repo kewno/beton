@@ -1,17 +1,15 @@
 .request-description {
-  //display: flex;
-  //flex-direction: column;
-  .request-description__headline {
+
+  &__headline {
     font-weight: 400;
     font-size: 25px;
     line-height: 29px;
     margin: 0 0 24px 0;
   }
-  .request-description__text {
+  &__text {
     margin: 0 0 24px 0;
     font-weight: 400;
     font-size: 16px;
     line-height: 120%;
-    //max-width: 699px;
   }
 }

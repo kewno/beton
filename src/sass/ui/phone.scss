@@ -12,14 +12,14 @@
   }
 }
 
-.text-wrap_phone {
-  .text-wrap_phone__number {
+.phone-text-wrap {
+  &__number {
     font-size: 14px;
     color: var(--black);
     margin: 0 0 4px 0;
   }
 
-  .text-wrap_phone__address {
+  &__address {
     font-size: 13px;
     color: var(--grey-phone );
     margin: 0;
@@ -36,13 +36,13 @@
 }
 
 .phone_black {
-  .text-wrap_phone {
+  .phone-text-wrap {
 
-    .text-wrap_phone__number {
+    &__number {
       color: var(--black);
     }
 
-    .text-wrap_phone__address {
+    &__address {
       color: var(--grey-phone);
     }
   }
@@ -59,13 +59,13 @@
 }
 
 .phone_white {
-  .text-wrap_phone {
+  .phone-text-wrap {
 
-    .text-wrap_phone__number {
+    &__number {
       color: var(--white);
     }
 
-    .text-wrap_phone__address {
+    &__address {
       color: var(--white);
     }
   }
@@ -86,8 +86,8 @@
     margin-right: 19.86px;
   }
 
-  .text-wrap_phone {
-    .text-wrap_phone__number {
+  .phone-text-wrap {
+    &__number {
       margin: 0;
     }
   }
@@ -102,7 +102,7 @@
     .phone__icon {
       display: none;
     }
-    .text-wrap_phone {
+    .phone-text-wrap {
       display: flex;
       justify-content: space-between;
       max-width: 566px;
@@ -113,13 +113,13 @@
       //
       //}
 
-      .text-wrap_phone__number {
+      &__number {
         margin: 0;
         font-size: 16px;
         color: var(--ocean);
         font-weight: 700;
       }
-      .text-wrap_phone__address {
+      &__address {
         font-size: 16px;
       }
     }
@@ -128,13 +128,13 @@
 
 @media (max-width: 440px) {
   .phone_blue {
-    .text-wrap_phone {
-      padding: 8px 0;
-      .text-wrap_phone__number {
+    .phone-text-wrap {
+      padding: 9.5px 0;
+      &__number {
         font-size: 12px;
       }
 
-      .text-wrap_phone__address {
+      &__address {
         font-size: 12px;
       }
     }
@@ -142,12 +142,12 @@
 }
 
 @media (max-width: 360px) {
-  .text-wrap_phone {
-    .text-wrap_phone__number {
+  .phone-text-wrap {
+    &__number {
       font-size: 13px;
     }
 
-    .text-wrap_phone__address {
+    &__address {
       font-size: 13px;
     }
   }

@@ -1,15 +1,15 @@
 .products-complete-work {
   margin-top: 180px;
-  .products-complete-work__headline {
+  &__headline {
     font-weight: 700;
     margin: 0 0 25px;
     font-size: 16px;
   }
-  .products-complete-work__img {
+  &__img {
     width: 200px;
     border-radius: 10px;
   }
-  .products-complete-work__text {
+  &__text {
     font-size: 14px;
     margin: 15px 0 0;
     max-width: 215px;

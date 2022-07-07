@@ -1,22 +1,22 @@
 .employees-our-team {
-  .employees-our-team__headline {
+  &__headline {
     font-weight: 700;
     font-size: 30px;
     line-height: 140%;
     color: var(--black);
     margin: 44px 0 15px;
   }
-  .employees-our-team__text {
+  &__text {
     margin: 0 0 75px;
   }
-  .employees-our-team__wrap-person {
+  &__wrap-person {
     max-width: 659px;
     width: 100%;
     display: flex;
     justify-content: space-between;
   }
 
-  .employees-our-team__line {
+  &__line {
     border: 1px solid var(--line);
     width: 100%;
     display: inline-block;
@@ -27,10 +27,10 @@
 
 @media (max-width: 768px) {
   .employees-our-team {
-    .employees-our-team__wrap-person {
+    &__wrap-person {
       justify-content: left;
     }
-    .employees-our-team__line {
+    &__line {
       margin: 44px 0 15px;
     }
   }
@@ -38,14 +38,14 @@
 
 @media (max-width: 500px) {
   .employees-our-team {
-    .employees-our-team__wrap-person {
+    &__wrap-person {
       justify-content: center;
       flex-wrap: wrap;
     }
-    .employees-our-team__headline {
+    &__headline {
       margin:  24px 0 15px;
     }
-    .employees-our-team__text {
+    &__text {
       margin: 0 0 43px;
     }
   }

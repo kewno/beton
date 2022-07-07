@@ -1,22 +1,22 @@
 .products-right-block {
-  .products-right-block__wrap-buttons {
+  &__wrap-buttons {
     display: flex;
     margin: 66px 0 51px;
   }
-  .products-right-block__headline {
+  &__headline {
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
     margin: 0 0 44px;
     color: var(--black);
   }
-  .products-right-block__wrap-request {
+  &__wrap-request {
     display: flex;
     max-width: 540px;
     justify-content: space-between;
     margin-bottom: 52px;
   }
-  .products-right-block__wrap_slider {
+  &__wrap_slider {
     display: flex;
   }
 }
@@ -27,7 +27,7 @@
 
 @media (max-width: 768px) {
   .products-right-block {
-    .products-right-block__wrap_slider {
+    &__wrap_slider {
       margin-top: 29px;
     }
   }
@@ -35,16 +35,16 @@
 
 @media (max-width: 670px) {
   .products-right-block {
-    .products-right-block__wrap-buttons {
+    &__wrap-buttons {
       display: flex;
       margin: 52px 0 50px;
       flex-wrap: wrap;
     }
-    .products-right-block__wrap-request {
+    &__wrap-request {
       max-width: 670px;
       flex-wrap: wrap;
     }
-    .products-right-block__wrap_slider {
+    &__wrap_slider {
       flex-wrap: wrap;
       justify-content: center;
     }

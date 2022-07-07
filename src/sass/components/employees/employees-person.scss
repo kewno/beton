@@ -5,18 +5,18 @@
   border: 1px solid var(--border-person);
   padding-bottom: 40px;
 
-  .employees-person__img {
+  &__img {
     max-width: 311px;
     width: 100%;
   }
-  .employees-person__name {
+  &__name {
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
     color: var(--black);
     margin: 10px 0 10px 29px;
   }
-  .employees-person__position {
+  &__position {
     font-weight: 400;
     font-size: 14px;
     line-height: 140%;
@@ -30,19 +30,19 @@
     max-width: 230px;
     padding-bottom: 20.8px;
 
-    .employees-person__img {
+    &__img {
       width: 100%;
       max-width: 230px;
       height: 334px;
       object-fit: cover;
     }
 
-    .employees-person__name {
+    &__name {
       font-size: 16px;
       line-height: 120%;
       margin: 10px 0 6px 12px;
     }
-    .employees-person__position {
+    &__position {
       font-size: 14px;
       line-height: 120%;
       margin: 0 0 0 12px;

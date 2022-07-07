@@ -1,21 +1,21 @@
 .products-request {
   max-width: 260px;
   margin: 17px 0 0 0;
-  .products-request__description {
+  &__description {
     font-weight: 400;
     font-size: 30px;
     line-height: 35px;
     color: var(--all-black);
     margin: 0;
   }
-  .products-request__price {
+  &__price {
     font-weight: 700;
     font-size: 32px;
     line-height: 38px;
     color: var(--all-black);
     margin: 13px 0 23px;
   }
-  .products-request__wrap-button {
+  &__wrap-button {
     max-width: 200px;
     .btn {
       height: 45px;
@@ -37,16 +37,13 @@
     max-width: 550px;
     width: 100%;
 
-    .products-request__description {
+    &__description {
       font-size: 22px;
       line-height: 26px;
     }
-    .products-request__price {
+    &__price {
       font-size: 24px;
       line-height: 28px;
-    }
-    .products-request__wrap-button {
-
     }
   }
 }
