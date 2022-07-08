@@ -2,23 +2,38 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  .header__top {
+  header__top {
     padding: 18px 0 19px 0;
     background: var(--grey-light);
   }
 
-  .header__middle {
+  header__middle {
     display: flex;
     padding: 11px 16px 16px;
     align-items: center;
     max-width: 1250px;
     width: 100%;
     margin: 0 auto;
+    box-sizing: border-box;
   }
 
-  .header__bottom {
+  header__bottom {
     position: sticky;
     top: 0;
+  }
+  .header-with-phone-phone {
+    display: none;
+  }
+  .header-wrap-buttons {
+    max-width: 356px;
+    width: 100%;
+  }
+  .wrap-social-button {
+    display: none;
+    max-width: 356px;
+    & > .social {
+      display: none;
+    }
   }
 }
 
@@ -30,17 +45,10 @@
   justify-content: space-between;
 }
 
-.wrap-social-button {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 40px;
-  width: 496px;
-}
-
 .wrap-buttons {
   display: flex;
-  width: 346px;
+  max-width: 346px;
+  width: 100%;
   justify-content: space-around;
 }
 
@@ -82,13 +90,8 @@
   .phones {
     padding: 0 16px;
   }
-  .wrap-social-button {
-    margin-right: 32px;
-  }
-  //.header, .header-without-phone {
-  //  .header__middle {
-  //    padding: 0 16px;
-  //  }
+  //.wrap-social-button {
+  //  margin-right: 32px;
   //}
 }
 
@@ -100,10 +103,25 @@
   .wrap-buttons {
     display: none;
   }
+  .header.header-without-phone {
+    display: flex;
 
-  .header-without-phone {
     .header__top {
       display: none;
+    }
+  }
+  .header.header-without-phone {
+    display: flex;
+    header__top {
+      display: none;
+    }
+    header__middle {
+      padding: 0;
+      margin: 0 auto;
+    }
+    .header-with-phone-phone {
+      display: flex;
+      margin-right: 55.43px;
     }
   }
 
@@ -122,15 +140,21 @@
     display: flex;
     margin-right: 10px;
   }
-  .header.header-without-phone {
-    .header__middle {
-      padding: 0;
-      margin: 0 auto;
+  .wrap-social-button {
+
+    & > .social {
+      display: flex;
     }
   }
 }
 
 @media (max-width: 480px) {
+  .header.header-without-phone {
+    .header-with-phone-phone {
+      display: flex;
+      margin-right: 16.43px;
+    }
+  }
   .wrap-social-button {
     display: none;
     width: 80px;

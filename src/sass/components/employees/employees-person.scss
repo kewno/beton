@@ -3,7 +3,8 @@
   width: 100%;
   box-sizing: border-box;
   border: 1px solid var(--border-person);
-  padding-bottom: 40px;
+  //padding-bottom: 0px; wrap margin-bottom: 38px;
+  height: 473px;
 
   &__img {
     max-width: 311px;
@@ -22,6 +23,7 @@
     line-height: 140%;
     color: var(--white-grey);
     margin: 0 0 0 29px;
+    max-width: 257px;
   }
 }
 
@@ -29,7 +31,7 @@
   .employees-person {
     max-width: 230px;
     padding-bottom: 20.8px;
-
+    height: 450px;
     &__img {
       width: 100%;
       max-width: 230px;
@@ -40,7 +42,7 @@
     &__name {
       font-size: 16px;
       line-height: 120%;
-      margin: 10px 0 6px 12px;
+      margin: 9px 0 6px 12px;
     }
     &__position {
       font-size: 14px;
@@ -58,18 +60,18 @@
     height: 466px;
     box-sizing: border-box;
 
-    .employees-person__img {
+    &__img {
       width: 100%;
       max-width: 311px;
       height: 341px;
     }
 
-    .employees-person__name {
+    &__name {
       font-size: 18px;
       line-height: 21px;
-      margin: 13px 0 10px 29px;
+      margin: 10px 0 10px 29px;
     }
-    .employees-person__position {
+    &__position {
       font-size: 14px;
       line-height: 140%;
       margin: 0 0 0 29px;

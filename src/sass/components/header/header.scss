@@ -11,12 +11,18 @@
 
   &__middle {
     display: flex;
-    padding: 11px 0 16px 0;
+    padding: 11px 16px 16px;
     align-items: center;
     max-width: 1250px;
     width: 100%;
     margin: 0 auto;
+    box-sizing: border-box;
   }
+
+  //&__middle {
+  //  padding: 11px 0 16px;
+  //  margin: 0 16px;
+  //}
 
   &__bottom {
     position: sticky;
@@ -32,6 +38,7 @@
   justify-content: space-between;
 
   &__button {
+    display: none;
     margin-top: 4px;
     width: 100%;
     .btn {
@@ -41,6 +48,7 @@
     }
   }
 }
+
 
 .wrap-social-button {
   display: flex;
@@ -80,9 +88,12 @@
   }
 }
 .header-wrap-buttons  {
-  //display: flex;
+  display: flex;
+  width: 100%;
+  max-width: 346px;
   &__call {
     width: 176px;
+    margin-right: 13px;
   }
 
   &__price {
@@ -99,8 +110,6 @@
   .header-phones { //phones
     display: flex;
     flex-wrap: wrap;
-    //min-height: 111px;
-    //height: 100%;
     align-content: space-between;
     padding: 0 16px;
   }
@@ -108,12 +117,12 @@
     margin-right: 32px;
   }
 
-  .header {
-    &__middle {
-      padding: 11px 0 16px;
-      margin: 0 16px;
-    }
-  }
+  //.header {
+  //  &__middle {
+  //    padding: 11px 0 16px;
+  //    margin: 0 16px;
+  //  }
+  //}
 }
 
 @media (max-width: 768px) {
@@ -140,6 +149,16 @@
       display: none;
     }
   }
+  .header-phones {
+    display: flex;
+    margin-top: 0; //main margin-top: 5px;
+    max-width: 768px;
+
+    &__button {
+      display: flex;
+    }
+  }
+
   .mobile-menu {
     cursor: pointer;
     display: flex;
@@ -151,7 +170,7 @@
   .header {
     &__top {
       padding: 0 0 5px 0;
-      margin-top: 0;
+      margin-top: 5px; //employess 5px //main 0
     }
     &__middle {
       box-shadow: 0 0 15px #DEDEDE;
@@ -167,9 +186,8 @@
     width: 45px;
     height: 45px;
   }
-
   .header-phones {
-    margin-top: 5px;
+
     &__button {
       margin-top: -3px;
       width: 100%;

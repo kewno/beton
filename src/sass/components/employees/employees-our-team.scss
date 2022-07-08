@@ -7,7 +7,8 @@
     margin: 44px 0 15px;
   }
   &__text {
-    margin: 0 0 75px;
+    margin: 0 0 65px;
+    line-height: 134%;
   }
   &__wrap-person {
     max-width: 659px;
@@ -20,33 +21,43 @@
     border: 1px solid var(--line);
     width: 100%;
     display: inline-block;
-    margin: 49px 0 64px;
+    margin: 40px 0 58px;
   }
 
 }
 
 @media (max-width: 768px) {
   .employees-our-team {
+    &__text {
+      margin: 0 0 55px;
+    }
     &__wrap-person {
       justify-content: left;
     }
     &__line {
-      margin: 44px 0 15px;
+      margin: 58px 0 60px;
     }
   }
 }
 
 @media (max-width: 500px) {
+  .wrap-employees-person {
+    margin-bottom: 39px;
+  }
   .employees-our-team {
     &__wrap-person {
       justify-content: center;
       flex-wrap: wrap;
     }
     &__headline {
-      margin:  24px 0 15px;
+      margin: 24px 0 16px;
     }
     &__text {
       margin: 0 0 43px;
+      line-height: 139%;
+    }
+    &__line {
+      margin: 46px 0 40px;
     }
   }
 }

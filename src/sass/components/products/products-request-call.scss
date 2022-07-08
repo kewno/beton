@@ -1,6 +1,6 @@
 .request-call {
   background: var(--request-back);
-  padding: 60px 0 98px;
+  padding: 30px 0 98px;
   margin: 105px 0 0;
 
   &__headline {
@@ -17,23 +17,24 @@
   display: flex;
   justify-content: center;
 
-  .wrap-inputs-request__input {
+  &__input {
     max-width: 240px;
     width: 100%;
     margin-right: 19px;
   }
-  .wrap-inputs-request__button {
+  &__button {
     max-width: 240px;
     width: 100%;
     .btn {
       line-height: 45px;
+      font-size: 14px;
     }
   }
 }
 
 @media (max-width: 768px) {
   .request-call {
-    padding: 50px 0 110px;
+    padding: 46px 0 110px 10px;
     margin-top: 56px;
     &__headline {
       margin: 0 0 29px;
@@ -60,8 +61,8 @@
 
 @media (max-width: 360px) {
   .request-call {
-    padding: 30px 0 130px;
-    margin-top: 26px;
+    padding: 33px 0 130px;
+    margin-top: 0;
 
     &__headline {
       margin: 0 0 29px;

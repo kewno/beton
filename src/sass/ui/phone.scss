@@ -30,7 +30,7 @@
   .phone__icon {
     svg {
       fill: var(--blue);
-      stroke: blue;
+      stroke: var(--blue);
     }
   }
 }
@@ -75,7 +75,7 @@
     margin-right: 10px;
 
     svg {
-      stroke: var(--white);
+      stroke: var(--blue);
     }
   }
 }
@@ -89,6 +89,16 @@
   .phone-text-wrap {
     &__number {
       margin: 0;
+    }
+  }
+}
+
+.phone_header {
+  .phone-text-wrap {
+    &__address {
+      max-width: 290px;
+      width: 100%;
+      text-align: left;
     }
   }
 }
@@ -135,6 +145,17 @@
       }
 
       &__address {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .phone_header {
+    .phone-text-wrap {
+      &__address {
+        max-width: 135px;
+        width: 100%;
+        text-align: left;
         font-size: 12px;
       }
     }

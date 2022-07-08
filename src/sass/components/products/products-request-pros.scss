@@ -1,8 +1,14 @@
 .request-pros {
   &__text {
-    margin: 12px 0 0;
+    margin: 11px 0 0;
   }
 }
+
+//@media (max-width: 768px) {
+//  .request-description {
+//    margin-left: 2px;
+//  }
+//}
 
 @media (max-width: 670px) {
   .request-pros {

@@ -8,9 +8,28 @@
     margin: 0;
   }
   &__text {
-    margin-bottom: 24px;
+    margin-bottom: 22px;
   }
   &__contact {
-    margin-bottom: 2px;
+    margin-bottom: 0;
   }
 }
+
+@media (max-width: 500px) {
+  .employees-text-block {
+    &__text {
+      margin-bottom: 23px;
+      line-height: 137%;
+    }
+  }
+}
+
+//@media (max-width: 768px) {
+//  .employees-text-block {
+//
+//    &__text {
+//      line-height: 145%;
+//      margin-bottom: 29px;
+//    }
+//  }
+//}

@@ -1,5 +1,5 @@
 .footer-top {
-  padding: 70px 10px 30px; //50px 10px 30px
+  padding: 50px 10px 30px;
   //display: grid;
   //grid-template-rows: 188px 40px;
   //grid-gap-row: 68px 0;
@@ -65,19 +65,11 @@
   }
 }
 
-.footer-phones {
-  padding: 0 0 0 16px; //0 14px 0 28px
-  display: flex;
-  justify-content: space-between;
-  max-width: 1250px;
-  margin: 0 auto 58px;
-}
-
 
 @media (max-width: 768px) {
-  .footer-top {
-    padding: 45px 10px 30px;
-  }
+  //.wrap-footer-top {
+  //  padding: 50px 24px 32px 11px;
+  //}
 
   .wrap-logo-text {
     display: none;
@@ -94,7 +86,7 @@
     }
   }
 
-  .footer-phones {
+  .phones {
     //display: grid;
     //grid-column-gap: auto auto auto auto;
     display: flex;
@@ -103,7 +95,8 @@
     height: 100%;
     align-content: space-between;
     padding:0 35px 0 5px;
-    margin-bottom: 0px;
+    //padding: 0 5px;
+    //max-width: 1250px;
   }
 
   .wrap-menus {
@@ -131,7 +124,7 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 460px) {
   .wrap-email-social {
     &__email {
       display: flex;
@@ -142,10 +135,9 @@
   .footer-top {
     padding: 28px 8px 30px;
   }
-  .footer-phones {
+  .phones {
     & > .phone_white {
       margin-bottom: 25px;
-      width: 100%;
     }
     & > *:last-child {
       margin: 0;

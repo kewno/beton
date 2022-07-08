@@ -1,8 +1,8 @@
 .menu-products {
   display: flex;
   flex-direction: column;
-  max-width: 208px;
-  margin-top: 5px;
+  width: 208px;//208px
+  margin: 5px 0 0;
 
   .menu-products__elem_active {
     font-weight: 700;

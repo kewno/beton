@@ -13,18 +13,18 @@
   line-height: 16px;
   font-weight: 400;
   color: var(--blue);
-  margin-bottom: 20px;
+  margin-bottom: 23px;
   text-decoration: none;
   display: flex;
   align-items: center;
 
-  .menu-employees-elem__arrow {
+  &__arrow {
     width: 5px;
     height: 10px;
     margin-right: 20px ;
   }
 
-  .menu-employees-elem__text {
+  &__text {
     margin: 0;
   }
 

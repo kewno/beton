@@ -1,6 +1,6 @@
 .wrap-main-blocks {
   display: flex;
-  max-width: 978px;
+  max-width: 998px;
   margin: 0 auto;
   padding: 0 16px;
 }
@@ -15,5 +15,15 @@
 @media (max-width: 768px) {
   .products-wrap-navigation {
     display: none;
+  }
+  .wrap-main-blocks {
+    padding: 0 25px;
+  }
+}
+
+
+@media (max-width: 360px) {
+  .wrap-main-blocks {
+    padding: 0 16px;
   }
 }

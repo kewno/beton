@@ -1,18 +1,19 @@
 .products-complete-work {
-  margin-top: 180px;
+  margin-top: 190px;
   &__headline {
     font-weight: 700;
-    margin: 0 0 25px;
-    font-size: 16px;
+    margin: 0 0 20px;
+    font-size: 18px;
   }
   &__img {
     width: 200px;
+    height: 115px;
     border-radius: 10px;
   }
   &__text {
-    font-size: 14px;
-    margin: 15px 0 0;
-    max-width: 215px;
+    font-size: 13px;
+    margin: 10px 0 0;
+    max-width: 195px;
     line-height: 20px;
   }
 }

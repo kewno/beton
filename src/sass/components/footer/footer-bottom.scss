@@ -4,11 +4,12 @@
 
 .footer-bottom {
   display: flex;
-  padding: 24px 14px 24px 0;
+  padding: 27px 10px 24px 0;
   align-items: center;
   justify-content: end;
-  max-width: 1250px;
+  max-width: 1270px;
   margin: 0 auto;
+  box-sizing: border-box;
 
   &__name {
     font-weight: 400;

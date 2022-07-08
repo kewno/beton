@@ -9,7 +9,7 @@ mixin footerTop
   .footer-top
     .wrap-top-blocks
       .wrap-logo-text
-        img(class='wrap-logo-text__image',src='../../images/logo-small.png')
+        img(src='../../images/logo-small.png').wrap-logo-text__image
         p.wrap-logo-text__description Бетонный завод «Вега» — производитель высококачественной бетонной смеси. Мы доставляем бетон различных марок по всей территории Перми и Пермского края. Поставка бетона осуществляется собственным автопарком предприятия.
       .wrap-menus-social
         .wrap-menus
@@ -20,7 +20,7 @@ mixin footerTop
           p.wrap-email-social__quite Подписаться:
           .wrap-email-social__social
             +social()
-    .phones
+    .footer-phones
       +phone('+7 (342) 203-07-88', 'г.Пермь, ул. Ш. Космонавтов', 'phone_white')
       +phone('+7 (342) 203-07-88', 'г.Пермь, ул. Героев Хасана', 'phone_white')
       +phone('+7 (342) 203-07-88', 'г. Краснокамск', 'phone_white')
