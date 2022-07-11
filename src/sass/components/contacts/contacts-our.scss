@@ -2,7 +2,14 @@
   &__headline {
     font-weight: 300;
     font-size: 32px;
-    margin: 80px 0 40px;
+    margin: 68px 0 34px;
   }
+}
 
+@media (max-width: 768px) {
+  .contacts-our {
+    &__headline {
+      margin: 65px 0 34px;
+    }
+  }
 }

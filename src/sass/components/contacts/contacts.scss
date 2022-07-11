@@ -7,19 +7,17 @@
 }
 
 .contacts-wrap-navigation {
-  margin-top: 26px;
+  margin-top: 35px;
 }
 
 @media (max-width: 768px) {
-  @media (max-width: 480px) {
-    .contacts-container {
-      padding: 0 24px 70px;
-    }
+  .contacts-container {
+    padding: 0 24px 80px;
   }
 }
 
 @media (max-width: 480px) {
   .contacts-container {
-    padding: 0 15px 70px;
+    padding: 0 15px 85px;
   }
 }

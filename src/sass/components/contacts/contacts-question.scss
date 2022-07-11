@@ -13,8 +13,25 @@
 }
 
 .contacts-wrap-phone {
-  margin-bottom: 15px;
+  margin-bottom: 16px;
   &:last-child {
     margin-bottom: 0;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .contacts-question {
+    &__headline {
+      margin: 55px 0 21px;
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .contacts-question {
+    &__headline {
+      margin: 27px 0 21px;
+    }
   }
 }
