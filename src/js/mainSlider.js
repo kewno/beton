@@ -15,14 +15,5 @@ document.addEventListener('DOMContentLoaded', () => {
       nextEl: ".control-slider__arrow_right",
       prevEl: ".control-slider__arrow_left",
     },
-    // breakpoints: {
-    //   1350: {
-    //     spaceBetween: 13,
-    //     slidesPerView: 4
-    //   },
-    // }
-    // return '<span class="' + className + '">' + (index + 1) + "</span>";
-      // nextEl: ".button-next",
-      // prevEl: ".button-prev",
   })
 })

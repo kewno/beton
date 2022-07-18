@@ -1,8 +1,9 @@
 .main-slider {
-  max-width: 100%;
+  //max-width: 100%;
   width: 100%;
   position: relative;
   border-bottom: 20px solid #C4C4C4;
+  overflow: hidden;
   .swiper-wrapper {
     display: flex;
     height: 550px;

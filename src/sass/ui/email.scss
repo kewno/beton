@@ -19,7 +19,9 @@
     }
     .email__img {
       svg {
-        stroke: var(--white);
+        * {
+          fill: var(--white);
+        }
       }
     }
   }
@@ -29,7 +31,9 @@
     }
     .email__img {
       svg {
-        stroke: var(--black);
+        * {
+          fill: var(--black);
+        }
       }
     }
   }
@@ -46,7 +50,9 @@
     height: 15.07px;
     margin-right: 15px;
     svg {
-      stroke: var(--black);
+      * {
+        fill: var(--black);
+      }
     }
   }
 }
