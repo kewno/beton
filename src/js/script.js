@@ -53,5 +53,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (pointDelivery != null) pointDelivery.onclick = () => toggleCard();
   if (arrowDelivery != null) arrowDelivery.onclick = () => toggleCard();
-
 });

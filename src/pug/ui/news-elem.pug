@@ -1,5 +1,5 @@
 mixin newsElem(href, date, text, img, className)
-    a(href= href, class= className, style=`background: url("${img}") no-repeat; background-size: cover`)
+    a(href= href, class= className, style=`background-image: url("${img}"); background-repeat: no-repeat; background-position: center;`)
       .news-elem-back
       .wrap-text-news
         p.wrap-text-news__date= date
