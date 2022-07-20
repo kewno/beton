@@ -14,9 +14,9 @@ mixin menuMobile(elem, phones)
       .container-phone
         each el in phones
           .wrap-phone
-            +phone(el.phone, el.name  )
+            +phone(el.phone, el.name, null, '/')
       .wrap-email
-        +email('vegabeton@mail.ru', 'email_black')
+        +email('vegabeton@mail.ru', 'email_black', '/')
       .menu-mobile-social
         +social()
 

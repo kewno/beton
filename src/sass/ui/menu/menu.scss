@@ -13,13 +13,16 @@
   margin: 0 auto;
   padding: 0 16px;
 
-  .menu__elem {
+  &__elem {
     font-weight: 700;
     font-size: 16px;
     line-height: 19px;
     color: var(--white);
     text-decoration: none;
     padding: 19px 0;
+    &:hover {
+      opacity: 0.8;
+    }
   }
 }
 
@@ -27,7 +30,7 @@
   .menu {
     flex-wrap: wrap;
     justify-content: center;
-    .menu__elem {
+    &__elem {
       padding: 10px 30px;
     }
   }

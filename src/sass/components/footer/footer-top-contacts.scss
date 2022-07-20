@@ -77,7 +77,6 @@
       height: 100%;
       align-content: space-between;
       padding:0 35px 0 5px;
-      //margin-bottom: 10px;
     }
   }
 
@@ -98,7 +97,7 @@
 
   .wrap-menus {
     max-width: 570px;
-    margin-right: 0px;
+    margin-right: 0;
   }
 }
 
@@ -137,14 +136,4 @@
       margin: 0;
     }
   }
-
-  //.wrap-top-blocks {
-  //  margin: 0 0 10px;
-  //}
 }
-
-//@media (max-width: 360px) {
-//  .wrap-footer-top {
-//    padding: 30px 24px 25px 16px;
-//  }
-//}

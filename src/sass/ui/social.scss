@@ -4,10 +4,14 @@
   justify-content: space-between;
   align-items: center;
 
-  .social__elem {
+  &__elem {
     width: 30px;
     height: 30px;
     display: flex;
+
+    &:hover {
+      opacity: 0.8;
+    }
   }
 }
 
@@ -16,7 +20,7 @@
     width: 185px;
     justify-content: space-between;
 
-    .social__elem {
+    &__elem {
       width: 45px;
       height: 45px;
     }

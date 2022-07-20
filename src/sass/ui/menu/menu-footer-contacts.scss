@@ -12,6 +12,10 @@
     color: var(--white);
     text-decoration: none;
     margin-bottom: 15px;
+
+    &:hover {
+      opacity: 0.8;
+    }
   }
 }
 

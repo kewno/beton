@@ -18,13 +18,13 @@ mixin headerProducts(elemMenu)
         .header-phones__button
           +btn('Скачать прайс-лист', '/', 'button_blue phones__bth-header')
     .header__middle
-      .mobile-menu
+      a(href='/').mobile-menu
         img(src='../../images/menu-burger.png')
       .wrap-logo
         +logo('../../images/logo.png')
       .wrap-social-button
         +social()
-      .header-with-phone-phone
+      a(href='/').header-with-phone-phone
         img(src='../../images/phone_big.png')
       .wrap-buttons
         .wrap-button_call
@@ -32,7 +32,6 @@ mixin headerProducts(elemMenu)
         .wrap-button_price
           +btn('Прайс-лист', '/', 'button_rainbow')
     .header__bottom
-      // +menu(elemMenu)
     +menuMobile(
       ['Компания', 'Видеоблог', 'Выполненные проекты', 'Бетон', 'Аренда бетононасоса', 'Лаборатория', 'Отзывы', 'Контакты'],
       [{name: 'Завод в Перми', phone: '+7 (342) 203-06-88'}, {name: 'Завод в Краснокамске', phone: '+7 (342) 271-04-08'}, {name: 'Завод у Чусовского моста', phone: '+7 (342) 203-07-88'}])

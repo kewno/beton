@@ -9,6 +9,15 @@
     margin: 140px 0 0 25px;
   }
 
+  &:hover {
+    .arrow-href {
+      width: 100px;
+      &__img {
+        width: 100px;
+      }
+    }
+  }
+
 }
 .concrete-wrap-text {
   > * {
@@ -83,6 +92,14 @@
     margin-bottom: 26px;
     &:last-child {
       margin-bottom: 0;
+    }
+
+    &:hover {
+      .arrow-href {
+        &__img {
+          width: 75px;
+        }
+      }
     }
   }
 }

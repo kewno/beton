@@ -103,12 +103,12 @@
     height: 100%;
     align-content: space-between;
     padding:0 35px 0 5px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 
   .wrap-menus {
     max-width: 570px;
-    margin-right: 0px;
+    margin-right: 0;
   }
 
   .wrap-top-blocks {
@@ -129,15 +129,16 @@
     flex-direction: column;
     margin-bottom: 0;
   }
+  .wrap-email-social {
+    &__email {
+      a {
+        margin-right: auto;
+      }
+    }
+  }
 }
 
 @media (max-width: 480px) {
-  .wrap-email-social {
-    &__email {
-      display: flex;
-      justify-content: left;
-    }
-  }
 
   .footer-top {
     padding: 28px 8px 30px;
@@ -156,9 +157,3 @@
     margin: 0 0 40px;
   }
 }
-
-//@media (max-width: 360px) {
-//  .wrap-footer-top {
-//    padding: 30px 24px 25px 16px;
-//  }
-//}

@@ -1,13 +1,14 @@
-.completed_works_elem {
+.completed-works-elem {
   display: inline-block;
   width: 303px;
   height: 397px;
   background: var(--blue);
-  .completed_works_elem__img {
+
+  &__img {
     height: 225px;
   }
 
-  .completed_works_elem__text {
+  &__text {
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
@@ -22,8 +23,9 @@
 }
 
 @media (max-width: 768px) {
-  .completed_works_elem {
-    .completed_works_elem__text {
+  .completed-works-elem {
+    margin: 0 auto;
+    &__text {
       margin: 18px 0 0 22px;
     }
   }
@@ -31,9 +33,12 @@
 
 
 @media (max-width: 400px) {
-  .completed_works_elem {
+  .completed-works-elem {
     height: 342px;
-    .completed_works_elem__text {
+    //width: auto;
+    //padding: 0 auto;
+    //margin-left: 20px;
+    &__text {
       margin: 18px 0 0 20px;
       font-weight: 500;
       font-size: 16px;

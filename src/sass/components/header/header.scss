@@ -19,11 +19,6 @@
     box-sizing: border-box;
   }
 
-  //&__middle {
-  //  padding: 11px 0 16px;
-  //  margin: 0 16px;
-  //}
-
   &__bottom {
     position: sticky;
     top: 0;
@@ -116,13 +111,6 @@
   .wrap-social-button {
     margin-right: 32px;
   }
-
-  //.header {
-  //  &__middle {
-  //    padding: 11px 0 16px;
-  //    margin: 0 16px;
-  //  }
-  //}
 }
 
 @media (max-width: 768px) {

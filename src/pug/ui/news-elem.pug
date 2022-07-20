@@ -1,6 +1,7 @@
-mixin newsElem(date, text, img, className)
-  div(class= className, style=`background: url("${img}") repeat center center;`)
-    .wrap-text-news
-      p.wrap-text-news__date= date
-      p.wrap-text-news__text= text
-    //img(class='news-elem__img', src= src)
+mixin newsElem(href, date, text, img, className)
+    a(href= href, class= className, style=`background: url("${img}") no-repeat; background-size: cover`)
+      .news-elem-back
+      .wrap-text-news
+        p.wrap-text-news__date= date
+        p.wrap-text-news__text= text
+    //img(src='../../images/blue.png', class='news-elem-back') //center center

@@ -18,7 +18,7 @@
     justify-content: center;
     align-items: center;
     &__image {
-      max-width: 1920px;
+      //max-width: 1920px;
       width: 100%;
       height: 550px;
       object-fit: cover;
@@ -89,7 +89,7 @@
     }
     .swiper-slide {
       height: 330px;
-      .swiper-slide__image {
+      &__image {
         height: 330px;
       }
     }
@@ -111,7 +111,7 @@
     }
     .swiper-slide {
       height: 184px;
-      .swiper-slide__image {
+      &__image {
         height: 184px;
       }
     }

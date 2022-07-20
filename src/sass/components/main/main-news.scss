@@ -29,7 +29,10 @@
 }
 
 .wrap-news-elems {
-  display: flex;
+  //display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 23px;
   max-width: 1250px;
   justify-content: space-between;
   margin: 0;
@@ -45,24 +48,35 @@
 }
 
 .right-news {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  //display: flex;
+  //flex-direction: column;
+  //justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-row-gap: 24px;
   height: 615px;
-  max-width: 50%;
-  margin-left: 20px;
+  max-width: 100%;
+  //max-width: 50%;
+  //margin-left: 20px;
 }
 
 .news-elem-long {
-  max-width: 614px;
+  width: 100%;
+
+  //grid-column-start: 1;
+  //grid-column-end: 2;
 }
 
 .bottom-news {
-  display: flex;
-  justify-content: space-between;
+  //display: flex;
+  //justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 24px;
 
   & > *:first-child {
-    margin-right: 24px;
+    //margin-right: 24px;
   }
 }
 
@@ -88,7 +102,10 @@
     }
   }
   .wrap-news-elems {
-    flex-wrap: wrap;
+    //flex-wrap: wrap;
+    grid-template-columns: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 30px;
     margin: 0 auto;
     width: 100%;
     height: 100%;
@@ -99,12 +116,13 @@
   }
   .right-news {
     height: auto;
-    margin: 30px 0 0 0;
+    //margin: 30px 0 0 0;
+    grid-row-gap: 30px;
     width: 100%;
     max-width: 992px;
   }
   .news-elem-long {
-    margin: 0 auto 25px;
+    //margin: 0 auto 25px;
     max-width: 1000px;
     width: 100%;
     height: 420px;
@@ -113,6 +131,7 @@
     margin: 0 auto;
     max-width: 936px;
     width: 100%;
+    grid-column-gap: 28px;
   }
   .wrap-news-btn {
     display: flex;
@@ -130,18 +149,29 @@
       font-size: 24px;
     }
   }
+
+  .wrap-news-elems {
+    grid-row-gap: 25px;
+  }
+
   .right-news {
-    margin-top: 20px;
+    //margin-top: 20px;
+    grid-template-rows: 1fr;
+    grid-row-gap: 25px;
   }
   .news-elem-long {
     height: 200px;
-    margin-bottom: 20px;
+    //margin-bottom: 20px;
   }
   .bottom-news {
-    flex-wrap: wrap;//width: 100%;
-    & > *:first-child {
-      margin: 0 0 20px 0;
-    }
+    //flex-wrap: wrap;//width: 100%;
+    //& > *:first-child {
+    //  margin: 0 0 20px 0;
+    //}
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 25px;
+    //grid-column-gap: 28px;
   }
   .wrap-header-btn {
     margin-bottom: 19px;

@@ -2,6 +2,8 @@
   display: flex;
   background: none;
   width: auto;
+  text-decoration: none;
+
   .phone__icon {
     width: 17.14px;
     height: 18px;
@@ -81,7 +83,7 @@
 
     svg {
       * {
-        stroke: var(--blue);
+        stroke: var(--white);
       }
     }
   }
@@ -127,9 +129,6 @@
       width: 100%;
       margin: 0 auto;
       padding: 20px 0 18px 0;
-      //&:last-child {
-      //
-      //}
 
       &__number {
         margin: 0;

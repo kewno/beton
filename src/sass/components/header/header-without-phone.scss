@@ -2,25 +2,6 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  header__top {
-    padding: 18px 0 19px 0;
-    background: var(--grey-light);
-  }
-
-  header__middle {
-    display: flex;
-    padding: 11px 16px 16px;
-    align-items: center;
-    max-width: 1250px;
-    width: 100%;
-    margin: 0 auto;
-    box-sizing: border-box;
-  }
-
-  header__bottom {
-    position: sticky;
-    top: 0;
-  }
   .header-with-phone-phone {
     display: none;
   }
@@ -90,9 +71,6 @@
   .phones {
     padding: 0 16px;
   }
-  //.wrap-social-button {
-  //  margin-right: 32px;
-  //}
 }
 
 @media (max-width: 768px) {
@@ -112,13 +90,13 @@
   }
   .header.header-without-phone {
     display: flex;
-    header__top {
-      display: none;
-    }
-    header__middle {
-      padding: 0;
-      margin: 0 auto;
-    }
+    //header__top {
+    //  display: none;
+    //}
+    //header__middle {
+    //  padding: 0;
+    //  margin: 0 auto;
+    //}
     .header-with-phone-phone {
       display: flex;
       margin-right: 55.43px;
